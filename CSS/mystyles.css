@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/* Insert custom CSS to override the template CSS */
+
+/* Body element added by Aida on November 15th */
+html, body {
+    position: absolute;
+    height: 100%; 
+    width: 100%; 
+    overflow-x: hidden;  
+}
+
+/***********************
+* Owner: Aida Tuhcic
+* Date: November 15th 
+* Comments: Added css elements to the logo. 
+* Purpose: The following code down below, formats the logo in place - for it to align with the navigation bar. 
+           As well, I also resized the image below. 
+***********************/
+
+/* logo class */
+.logo {
+    position: absolute; 
+    margin-left: 0px; 
+    margin-top: -45px; 
+}
+
+/* logo image */ 
+.logo img {
+    height: 150px;  
+}
+/* End Owner: Aida Tuhcic */
+
+/*Hero image style by Sunayana*/
+header.home {
+  background-position: center;
+  background-size: cover;
+  min-height: 25%;
+}
+
+/***********************
+* Owner: Aida Tuhcic
+* Date: November 15th 
+* Comments: Added css elements to the slogan. 
+* Sources: Some elements are derived from https://www.w3schools.com/howto/howto_css_hero_image.asp, however not all.
+           Will put extra comments down below displaying which elements. 
+           - The translate element down below allows for an element to be repositioned in a vertical/horizontal direction.
+           - The reason I used it was to align the slogan in the center of the hero image.
+           - Used inspect tool on the browser to figure out the right dimensions for the media queries.  
+* Purpose: The following code down below, formats the slogan in the center of the hero image. 
+           - Also added media queries, for the text to render properly when a user changes devices or their browser viewport.  
+***********************/
+
+/* slogan */
+.slogan, 
+    .h1, .p {
+    color: #ffffff; 
+    position: absolute; 
+    text-align: center; 
+    top: 50%; 
+    left: 50%;  
+    width: 100%; 
+    transform: translate(-50%, -50%); /* Source w3schools. */
+
+}
+
+/* h1 element located in slogan class */
+.slogan h1 {
+    color: inherit; 
+    font-size: 6em;  
+}
+
+/* media query for slogan .h1 */
+@media all and (min-width: 414px) and (max-width: 767px) {
+    .slogan h1 {
+      font-size: 3.2em; 
+    }
+  }
+
+/* paragraph element located in slogan class */
+.slogan p {
+    font-size: 1.5em; 
+    font-style: italic; 
+}
+
+/* media query for slogan paragraph element */
+@media all and (min-width: 414px) and (max-width: 767px) {
+    .slogan p {
+      font-size: 1.2em; 
+    }
+  }
+
+/* End Owner: Aida Tuhcic */
+
+/***********************
+* Owner: Aida Tuhcic
+* Date: November 15th 
+* Comments: Added css elements to the button arrow png located in the hero image. 
+* Sources: Some elements are derived from https://www.w3schools.com/howto/howto_css_hero_image.asp, however not all.
+           Will put extra comments down below displaying which elements. 
+           - The translate element down below allows for an element to be repositioned in a vertical/horizontal direction.
+           - The reason I used it was to align the button arrow png in the center of the hero image. 
+           - Used inspect tool on the browser to figure out the right dimensions for the media queries. 
+* Purpose: The following code down below, formats the button arrow png in the center of the hero image. 
+           - The button arrow png acts as a continue button for the user to continue down to next section of the webpage. 
+           - Also added media queries, for the text to render properly when a user changes devices or their browser viewport.  
+***********************/
+
+/* button arrow class */ 
+.button-arrow { 
+    position: absolute; 
+    top: 80%; 
+    left: 50%; 
+    transform: translate(-50%, -80%); /* Source w3schools. */
+}
+
+/* media query for button arrow class */ 
+@media all and (min-width: 414px) and (max-width: 767px) {
+    .button-arrow {
+        position: absolute; 
+        top: 70%;
+        left: 50%;  
+        transform: translate(-50%, -70%); /* Source w3schools. */
+    }
+}
+
+/* button arrow img */ 
+.button-arrow img {
+    position: inherit; 
+    height: 100px; 
+}
+
+/* media query for button arrow img */ 
+@media all and (min-width: 414px) and (max-width: 767px) {
+    .button-arrow img {
+        position: inherit; 
+        height: 80px; 
+    }
+}
+/* End Owner: Aida Tuhcic */
+
+/*About us style added by Sunayana*/
+.about{
+    text-align: center;
+	padding: 128px;
+	font-size: 16px;
+	font-style: 'Raleway';
+}
+
+
+/* Footer style added by Terrie-Ann 17/11/2021 */
+footer { /*footer by Terrie-Ann 15/11/2021*/
+    background-color: #6fc;/*Footer background colour updated by Terrie-Ann 17/11/2021*/
+    font-style: 'Raleway';
+    font-size: 12px;
+    text-align: center;
+    
+
+}
+    h3 { /*style updated by Terrie-Ann 06/12/2021*/
+        font-family: "Raleway", sans-serif;
+        font-size: 20px;
+        font-weight: 700;   
+    }
+
+/*Drop down menu styling by Rebecca*/
+/*Drop down menu code from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar*/
+
+/* The dropdown containers */
+.dropdown1, .dropdown2 {
+  float: left;
+  overflow: hidden;
+  color: black;
+}
+  
+  /* Dropdown button */
+  .dropdown1 .dropbtn1, .dropdown2 .dropbtn2 {
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content1, .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content1 a, .dropdown-content2 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content1 a:hover, .dropdown-content2 a:hover {
+    background-color: #ddd;
+    display: block;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown1:hover .dropdown-content1, .dropdown2:hover .dropdown-content2 {
+    display: block;
+  }
+  
+/*overall styles*/
+
+title,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+/*Team Page CSS. Owner: Terrie-Ann. December 6, 2021.*/
+.container {
+  padding:128px 16px;
+}
+
+/*Make images and bio appear in column form*/
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border:5px outset silver;
+}
+
+.w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large {
+  display:none;
+}
+
+.w3-row-padding {
+  margin-top:64px;
+
+}
+.w3-card {
+  background-color: lightblue;
+}

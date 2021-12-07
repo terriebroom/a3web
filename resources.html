@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<title>Resources</title><!-- Title changed by Sunayana on December 6th -->
+<link rel="icon" type="image/png" href="images/favicon.png"/><!-- Fav Icon added by Aida on November 16th-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<!-- icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS/mystyles.css">
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <!-- ----------------------
+    - Owner: Aida Tuhcic 
+    - Date: November 15th 
+    - From : https://www.w3schools.com/css/css3_images.asp
+    - Changes: Added the logo png in the template. 
+    - Source of Image: I, the author Aida, created the logo. 
+    -------------------------- -->
+
+<!-- home (logo link), about, services, projects gallery, locations, team, resources -->
+<div class="logo">
+    <a href="index.html"><img src="images/logo.png" alt="logo"></a> 
+</div>
+<!--** End Owner: Aida Tuhcic ***-->
+
+<!-- Nav bar links and icons by Rebecca Wilkins-->
+<!-- dropdown menu code from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
+<!-- Right-sided navbar links -->
+<div class="w3-right w3-hide-small navbar">
+    <div class="dropdown1">
+        <button class="dropbtn1"><i class="fa fa-building-o"></i> OUR COMPANY<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content1">
+          <div><a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT US</a></div>
+          <div><a href="testimonials.html" class="w3-bar-item w3-button"><i class="fa fa-commenting-o"></i> TESTIMONIALS</a></div>
+          <div><a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> STAFF</a></div>
+        </div> <!-- end div.dropdown-content1-->
+    </div> <!-- end div.dropdown1-->
+    <div class="dropdown2">
+        <button class="dropbtn2"><i class="fa fa-briefcase"></i> OUR WORK<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content2">
+        <div><a href="services.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a></div>
+        <div><a href="projects.html" class="w3-bar-item w3-button"><i class="fa fa-image"></i></i> GALLERY</a></div>
+        </div> <!-- end div.dropdown-content2-->
+    </div> <!-- end div.dropdown2-->
+    <a href="locations.html" class="w3-bar-item w3-button"><i class="fa fa-map-marker"></i></i> LOCATIONS</a>      
+    <a href="resources.html" class="w3-bar-item w3-button"><i class="fa fa-book"></i> RESOURCES</a>
+</div> <!-- end div.navbar-->
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
+  <!--projects button added by Terrie-Ann 17/11/2021-->
+  <a href="projects.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
+  <a href="locations.html" onclick="w3_close()" class="w3-bar-item w3-button">LOCATIONS</a>
+  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">STAFF</a>
+  <a href="testimonials.html" onclick="w3_close()" class="w3-bar-item w3-button">TESTIMONIALS</a>
+  <a href="resources.html" onclick="w3_close()" class="w3-bar-item w3-button">RESOURCES</a>
+</nav>
+
+<!-- Header with full-height hero image by Sunayana -->
+<!-- inspiration from w3schools https://www.w3schools.com/html/html_images.asp> -->
+<header id="home"><img src="images/heroimage.jpg" alt="Hero Image of a misty but very green temperate forest">
+<!-- ----------------------
+    - Owner: Aida Tuhcic 
+    - Date: November 15th 
+    - Changes: Added the slogan and button arrow png in the template. 
+    - Source of Image: I, the author Aida, created the arrow image. 
+    -------------------------- -->
+  <div class="slogan">
+      <h1>Géoinformatique.</h1>
+      <p>"La géoinformatique est magnifique."<p>
+    </div> 
+  <div class="button-arrow">
+    <a href="#about"><img src="images/arrowbutton.png" alt="arrow button"></a>
+  </div>
+</div>
+</header>
+<!--** End Owner: Aida Tuhcic ***-->
+  
+<!-- About Section edited by Sunayana -->
+<div class="about" id="about">
+  <h2>Team Strengths</h2>
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Team Section -->
+<!--Team section updated by Terrie-Ann 17/11/2021
+Images generated based on characteristics of team members - from https://generated.photos/faces-->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">MEET THE TEAM</h3>
+  <p class="w3-center w3-large">The framework of the company</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/Aida.jpg" alt="Aida" style="width:100%">
+        <div class="w3-container">
+          <h3>Aida Tuhcic</h3>
+          <p class="w3-opacity">IT Analyst</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/Terrie.jpg" alt="Terrie" style="width:100%">
+        <div class="w3-container">
+          <h3>Terrie-Ann Broomfield</h3>
+          <p class="w3-opacity">Land Surveying Specialist</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/Rebecca.jpg" alt="Rebecca" style="width:100%">
+        <div class="w3-container">
+          <h3>Rebecca Wilkins</h3>
+          <p class="w3-opacity">Remote Sensing Specialist</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/Sunayana.jpg" alt="Sunayana" style="width:100%">
+        <div class="w3-container">
+          <h3>Sunayana Sashikumar</h3>
+          <p class="w3-opacity">Geospatial Analyst</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer by Terrie-Ann. Inspired by w3schools startup template-->
+<!--Social media icons updated by Terrie-Ann 16/11/2021-->
+<!--Footer layout and contents updated by Terrie-Ann 17/11/2021-->
+<footer id="footer">
+    <a href="#home">Back to top</a>
+    <p></p> <!--icon links fixed by Terrie-Ann 16/11/2021-->
+    <a href="https://www.facebook.com/"><img src="images/facebook.jpg" alt="Facebook"></a>
+    <a href="https://www.instagram.com/"><img src="images/instagram.jpg" alt="Instagram"></a>
+    <a href="https://twitter.com/"><img src="images/twitter.jpg" alt="Twitter"></a>
+    <a href="https://www.linkedin.com/"><img src="images/linkedin.jpg" alt="Linkedin"></a>
+    <p>Copyright &#169 Géoinformatique 2021.</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
