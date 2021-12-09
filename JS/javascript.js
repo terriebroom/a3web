@@ -1,4 +1,4 @@
-// Javascript added by Aida on December 8th, 2021.
+// Added by Aida on December 8th, 2021
 function myFunction() {
     var x = document.getElementById("myTopnav");
   

@@ -1,16 +1,172 @@
-<!-- Changing the Doctype error Aida November 11th -->
 <!DOCTYPE html>
-<html> 
-<head>
-  <link rel="stylesheet" href="style.css">
-  <!-- Test comment -->
-  <title>Assignment 3 Demo</title>
-  <!-- Test commit Rebecca-->
-  </head>
-  <body>
-    <!--This is a test comment-->
-    <h1>Class Demonstration</h1>
-    <p>This is a demonstration for class</p>
-    <!-- Rebecca Nov 11/2021-->
-  </body>
-</html>
+  <html>
+    <head>
+      <title>Géoinformatique.</title><!-- Title changed by Aida on November 16th -->
+      <link rel="icon" type="image/png" href="images/favicon.png"/><!-- Fav Icon added by Aida on November 16th-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+      <!-- icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="CSS/mystyles.css">
+    </head>
+    <body>
+      
+     <!-- ----------------------
+          - Owner: Aida Tuhcic 
+          - Date: December 8th
+          - Changes: Added a new functional navigation header that has been assisted with JavaScript. Will the nav
+                     will resize when the user resizes.
+          - Sources: Some elements are derived from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
+          -------------------------- -->
+      <a name="top"></a>
+      <!-- Nav bar links and icons by Rebecca Wilkins-->
+      <!-- dropdown menu code from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
+      <!-- ----------------------
+            - Owner: Aida Tuhcic 
+            - Date: November 15th
+            - Changes: Added the logo png in the template. 
+            - Sources: I, the author Aida, created the logo image. 
+       -------------------------- -->
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a> 
+      </div>
+      
+        <div class="topnav" id="myTopnav">
+         
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-building-o"></i> OUR COMPANY 
+      <i class="fa fa-caret-down"></i>
+    </button>
+
+    <div class="dropdown-content">
+        <a href="#about"><i class="fa fa-info-circle"></i> ABOUT US</a>
+        <a href="#testimonials"><i class="fa fa-commenting-o"></i> TESTIMONIALS</a>
+        <a href="#staff"><i class="fa fa-user"></i> STAFF</a>
+    </a>
+    </div>
+    </div>
+
+<div class="dropdown">
+  <button class="dropbtn"><i class="fa fa-briefcase"></i> OUR WORK
+        <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+      <a href="#services"><i class="fa fa-th"></i> SERVICES</a>
+      <a href="#projects"><i class="fa fa-image"></i> GALLERY</a> 
+  </div>
+  </div> 
+
+      <a href="#locations"><i class="fa fa-map-marker"></i> LOCATIONS</a>
+      <a href="#resources"><i class="fa fa-book"></i> RESOURCES</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+      <!-- end div for top nav bar -->
+      <!--** End Owner: Aida Tuhcic ***-->
+
+      <!-- Header with full-height image by Sunayana -->
+      <!-- inspiration from w3schools https://www.w3schools.com/html/html_images.asp> -->
+      
+      
+      <!-- ----------------------
+            - Owner: Aida Tuhcic 
+            - Date: November 15th/December 8th
+            - Changes: Added the slogan and button arrow png in the template. 
+            - Sources: Some elements are derived from https://www.w3schools.com/w3css/tryw3css_templates_startup.html
+       -------------------------- -->
+      <div class="hero-image">
+        <div class="slogan">
+          <h1>Géoinformatique.</h1>
+          <p>"La géoinformatique est magnifique."<p>
+        </div> 
+        <div class="button-arrow">
+          <a href="#about"><img src="images/arrowbutton.png" alt="arrow button"></a>
+        </div>
+      </div> <!-- end div for hero image -->
+      <!--** End Owner: Aida Tuhcic ***-->
+      
+    <!-- ----------------------
+            - Owner: Aida Tuhcic 
+            - Date: November 15th/December 8th
+            - Changes: Added the about section to the main index.  
+            - Sources: https://www.w3schools.com/w3css/tryw3css_templates_startup.html
+     -------------------------- --> 
+    <div class="w3-container-about" id="about">
+    <div class="w3-row">
+    <div class="w3-col m6">
+        <h3 class="title-about">About Us.</h3>
+        <p>Welcome to Géoinformatique! We’re a Canadian based GIS Consulting firm, with multiple offices across the nation. 
+        We thrive in developing personal professional relationships with our clients and meeting their satisfactory needs with ideas and projects they need to brought to life. 
+        If you’re interested in learning more on how Géoinformatique was formed and our goals for meeting our clients essentials, click below for more.
+        </p>
+      <p><a href="about.html" class="button-about">Learn More About Us.</a></p>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-large" src="images/aboutus.jpg" alt="People sitting around">
+    </div>
+    </div>
+    </div>
+    <!--** End Owner: Aida Tuhcic ***-->
+
+    <!-- ----------------------
+            - Owner: Aida Tuhcic 
+            - Date: November 15th/December 8th
+            - Changes: Added the about section to the main index.  
+            - Sources: https://www.w3schools.com/w3css/tryw3css_templates_startup.html
+    -------------------------- --> 
+    <div class="w3-container-services" id="services">
+    <div class="w3-center-services">SERVICES.</div>
+    <div class="w3-center-services-tag">Services Géoinformatique can do for you!</div>
+      <div class="w3-row-padding w3-center">
+      <div class="w3-third">
+          <i class="fa fa-map w3-margin-bottom w3-jumbo" aria-hidden="true"></i>
+          <p class="w3-large">Mapping.</p>
+          <p>Multiple mapping techniques for various analytic purposes - including: site suitability, urban modeling, 
+          blue prints, online mapping applications and more. 
+          </p>
+      </div>
+      <div class="w3-third">
+          <i class="fa fa-database w3-margin-bottom w3-jumbo" aria-hidden="true"></i>
+          <p class="w3-large">Surveying and Data Collection.</p>
+          <p>When you don't have the information you need to make your analysis, we can help you determine what data you need and how to best obtain it. For your convenience, our in-house surveying team is able to collect accurate datasets for you.</p>
+    </div>
+    <div class="w3-third">
+        <i class="fa fa-arrows w3-margin-bottom w3-jumbo" aria-hidden="true"></i>
+        <p class="w3-large">Satellite Imagery Analysis.</p>
+        <p>With our in house staff we're able to collect and analyze data with our satellite imagery analysis. 
+    </p>
+    </div>
+  </div>
+</div>
+<!--** End Owner: Aida Tuhcic ***-->
+
+      <!-- Edited by Aida Tuhcic December 7th will update/explain with more detailed comments and sources! -->
+      <!-- Footer by Terrie-Ann. Inspired by w3schools startup template-->
+      <!--Social media icons updated by Terrie-Ann 16/11/2021-->
+      <!--Footer layout and contents updated by Terrie-Ann 17/11/2021-->
+      
+      <!-- ----------------------
+           - Owner: Aida Tuhcic 
+           - Date: November 15th 
+           - Changes: Updated the pngs needed. They are now clearer and easier to view. 
+           - Source: The pngs come from https://pngtree.com/so/social-media (free for commerical and personal use.)
+      -------------------------- -->
+      <div class="footer-container">
+        <footer>
+          <p></p> <!--icon links fixed by Terrie-Ann 16/11/2021-->
+          <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
+          <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter"></a>
+          <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="Linkedin"></a>
+          <p>Copyright &#169; Géoinformatique 2021.</p>
+          <p><a href= #top>back to top</a></p>
+        <footer>
+      </div> <!-- end div for footer -->
+      <!--** End Owner: Aida Tuhcic ***-->
+      
+      <!-- Calling Javascript file by Aida on December 7th, 2021. -->
+      <script src="JS/javascript.js"></script>
+
+    </body>
+  </html>

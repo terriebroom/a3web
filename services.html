@@ -1,215 +1,171 @@
 <!DOCTYPE html>
-<html>
-<title>Géoinformatique - Services</title>
-<link rel="icon" type="image/png" href="images/favicon.png"/><!-- Fav Icon added by Aida on November 16th-->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<!-- icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="CSS/mystyles.css">
+  <html>
+  <title>Géoinformatique.</title><!-- Title changed by Aida on November 16th -->
+  <link rel="icon" type="image/png" href="images/favicon.png"/><!-- Fav Icon added by Aida on November 16th-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <!-- icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/mystyles.css">
 
-<body>
+    <body>
+      <a name="top"></a>
+      <!-- Edited by Aida Tuhcic December 7th will update/explain with more detailed comments and sources!--> 
+      <!-- Nav bar links and icons by Rebecca Wilkins-->
+      <!-- dropdown menu code from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
+      <div class="logo" id="topofpage">
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a> 
+      </div>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <!-- ----------------------
-    - Owner: Aida Tuhcic 
-    - Date: November 15th 
-    - From : https://www.w3schools.com/css/css3_images.asp
-    - Changes: Added the logo png in the template. 
-    - Source of Image: I, the author Aida, created the logo. 
-    -------------------------- -->
+      <!-- Edited by Aida Tuhcic December 7th will update/explain with more detailed comments and sources! -->
+      <div class="topnav" id="myTopnav">
+        <a href="resources.html"><i class="fa fa-book"></i> RESOURCES</a>
+        <a href="locations.html"><i class="fa fa-map-marker"></i> LOCATIONS</a>
 
-<!-- home (logo link), about, services, projects gallery, locations, team, resources -->
-<div class="logo">
-    <a href="index.html"><img src="images/logo.png" alt="logo"></a> 
-</div>
-<!--** End Owner: Aida Tuhcic ***-->
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fa fa-briefcase"></i> OUR WORK <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="services.html"><i class="fa fa-th"></i> SERVICES</a>
+            <a href="projects.html"><i class="fa fa-image"></i> GALLERY</a> 
+          </div> <!-- end div for OUR WORK dropdown -->
+        </div> 
 
-<!-- Nav bar links and icons by Rebecca Wilkins-->
-<!-- dropdown menu code from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
-<!-- Right-sided navbar links -->
-<div class="w3-right w3-hide-small navbar">
-    <div class="dropdown1">
-        <button class="dropbtn1"><i class="fa fa-building-o"></i> OUR COMPANY<i class="fa fa-caret-down"></i></button>
-        <div class="dropdown-content1">
-          <div><a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT US</a></div>
-          <div><a href="testimonials.html" class="w3-bar-item w3-button"><i class="fa fa-commenting-o"></i> TESTIMONIALS</a></div>
-          <div><a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> STAFF</a></div>
-        </div> <!-- end div.dropdown-content1-->
-    </div> <!-- end div.dropdown1-->
-    <div class="dropdown2">
-        <button class="dropbtn2"><i class="fa fa-briefcase"></i> OUR WORK<i class="fa fa-caret-down"></i></button>
-        <div class="dropdown-content2">
-        <div><a href="services.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a></div>
-        <div><a href="projects.html" class="w3-bar-item w3-button"><i class="fa fa-image"></i></i> GALLERY</a></div>
-        </div> <!-- end div.dropdown-content2-->
-    </div> <!-- end div.dropdown2-->
-    <a href="locations.html" class="w3-bar-item w3-button"><i class="fa fa-map-marker"></i></i> LOCATIONS</a>      
-    <a href="resources.html" class="w3-bar-item w3-button"><i class="fa fa-book"></i> RESOURCES</a>
-</div> <!-- end div.navbar-->
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fa fa-building-o"></i> OUR COMPANY <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="about.html"><i class="fa fa-info-circle"></i> ABOUT US</a>
+            <a href="testimonials.html"><i class="fa fa-commenting-o"></i> TESTIMONIALS</a>
+            <a href="team.html"><i class="fa fa-user"></i> STAFF</a>
+          </div>
+        </div> <!-- end div for OUR COMPANY dropdown -->
 
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div> <!-- end div for top nav bar -->
 
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
-  <!--projects button added by Terrie-Ann 17/11/2021-->
-  <a href="projects.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
-  <a href="locations.html" onclick="w3_close()" class="w3-bar-item w3-button">LOCATIONS</a>
-  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">STAFF</a>
-  <a href="testimonials.html" onclick="w3_close()" class="w3-bar-item w3-button">TESTIMONIALS</a>
-  <a href="resources.html" onclick="w3_close()" class="w3-bar-item w3-button">RESOURCES</a>
-</nav>
-
-<!-- Header with full-height hero image by Sunayana -->
-<!-- inspiration from w3schools https://www.w3schools.com/html/html_images.asp> -->
-<header id="home"><img src="images/heroimage.jpg" alt="Hero Image of a misty but very green temperate forest">
-<!-- ----------------------
-    - Owner: Aida Tuhcic 
-    - Date: November 15th 
-    - Changes: Added the slogan and button arrow png in the template. 
-    - Source of Image: I, the author Aida, created the arrow image. 
-    -------------------------- -->
-  <div class="slogan">
-      <h1>SERVICES</h1>
-      <p>"La géoinformatique est magnifique."<p>
-    </div> 
-  <div class="button-arrow">
-    <a href="#about"><img src="images/arrowbutton.png" alt="arrow button"></a>
-  </div>
-</div>
-</header>
-<!--** End Owner: Aida Tuhcic ***-->
-  
-<div class="w3-container" style="padding:128px 16px" id="about">
-    <h2 class="w3-center">WHAT WE CAN DO FOR YOU</h3>
-    <p class="w3-center w3-large">Géoinformatique will work with your company to understand your business needs and desired outcomes. 
-        Our consultants can support your team by providing technical expertise and best practices, as well as in-house analysis services and data management. 
-        We are able to help with a wide variety of services, the most popular of which are shown below. 
-        For other GIS needs, <a href="locations.html">contact us</a> to see how we can help you succeed.
-    </p>
-</div> <!-- end header text -->
-
-
-
-<!-- Mapping services section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-    <div class="w3-row-padding">
-        <div class="w3-col m6">
-            <h3 class="w3-large">Mapping:</h3>
-            <ul>
-                <li>For spatial analysis purposes (such as site suitability, urban planning, route modelling, etc.)</li>
-                <li>Blueprints and schematics</li>
-                <li>Online mapping applications</li>
-                <li>Decorative prints</li>
-            </ul>
+      <!-- Edited by Aida Tuhcic December 7th will update/explain with more detailed comments and sources! -->
+      <!-- Header with full-height hero image by Sunayana -->
+      <!-- inspiration from w3schools https://www.w3schools.com/html/html_images.asp> -->
+      <!-- ----------------------
+          - Owner: Aida Tuhcic 
+          - Date: November 15th 
+          - Changes: Added the slogan and button arrow png in the template. 
+          - Source of Image: I, the author Aida, created the arrow image. 
+          -------------------------- -->
+      <div class="hero-image">
+        <div class="slogan">
+          <h1>SERVICES</h1>
+          <p>"La géoinformatique est magnifique."<p>
+        </div> 
+        <div class="button-arrow">
+          <a href="#about"><img src="images/arrowbutton.png" alt="arrow button"></a>
         </div>
-        <div class="w3-col m6">
-            <img class="w3-image w3-round-large" src="!!!!!!!!!!!!!!!!!!!!services-mapping!!!!!!!!!!!!" alt="Map showing hurricane evacuation routes routes in Houston, Texas" width="700" height="394">
+      </div> <!-- end div for hero image -->
+      <!--** End Owner: Aida Tuhcic ***-->
+<!-- -----------------
+- Owner : Rebecca Wilkins
+- Date  : Dec 3-8
+- From  : https://www.w3schools.com/w3css/tryw3css_templates_startup.htm
+Source of images: my schoolwork throughout the semester
+------------------- -->
+      <main id="about">
+        <div class="w3-container padding">
+            <h2 class="w3-center">WHAT WE CAN DO FOR YOU</h3>
+            <p class="w3-center w3-large">Géoinformatique will work with your company to understand your business needs and desired outcomes. 
+                Our consultants can support your team by providing technical expertise and best practices, as well as in-house analysis services and data management. 
+                We are able to help with a wide variety of services, the most popular of which are shown below. 
+                For other GIS needs, <a href="locations.html">contact us</a> to see how we can help you succeed.
+            </p>
+        </div> <!-- end header text -->
+        
+        <!-- Mapping services section -->
+        <div class="w3-container w3-light-grey padding">
+            <div class="w3-row-padding">
+                <div class="w3-col m6">
+                    <h3 class="w3-large">Mapping:</h3>
+                    <ul class="services-list">
+                        <li>For spatial analysis purposes (such as site suitability, urban planning, route modelling, etc.)</li>
+                        <li>Blueprints and schematics</li>
+                        <li>Online mapping applications</li>
+                        <li>Decorative prints</li>
+                    </ul>
+                </div>
+                <div class="w3-col m6">
+                    <img class="w3-image w3-round-large" src="images/services-mapping.jpg" alt="Map showing hurricane evacuation routes routes in Houston, Texas" width="700" height="394">
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-
-<!-- Satellite imagery analysis services  section -->
-<div class="w3-container" style="padding:128px 16px">
-    <div class="w3-row-padding">
-        <div class="w3-col m6">
-            <img class="w3-image w3-round-large" src="!!!!!!!!!!!!!!!!!!!!services-satellite!!!!!!!!!!!!" alt="Satellite imagery shown as a false colour composite" width="700" height="394">
+        
+        <!-- Satellite imagery analysis services  section -->
+        <div class="w3-container padding">
+            <div class="w3-row-padding">
+                <div class="w3-col m6">
+                    <img class="w3-image w3-round-large" src="images/services-satellite.jpg" alt="Satellite imagery shown as a false colour composite" width="700" height="394">
+                </div>
+                <div class="w3-col m6">
+                    <h3 class="w3-large">Satellite Imagery Analysis:</h3>
+                    <ul class="services-list">
+                        <li>Determining land use</li>
+                        <li>Environment observation</li>
+                        <li>Real-time remote sensing systems</li>
+                        <li>Imagery geocorrection</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="w3-col m6">
-            <h3 class="w3-large">Satellite Imagery Analysis:</h3>
-            <ul>
-                <li>Determining land use</li>
-                <li>Environment observation</li>
-                <li>Real-time remote sensing systems</li>
-                <li>Imagery geocorrection</li>
-            </ul>
+        
+        <!-- Surveying services section -->
+        <div class="w3-container w3-light-grey padding">
+            <div class="w3-row-padding">
+                <div class="w3-col m6">
+                    <h3 class="w3-large">Surveying and Data Collection:</h3>
+                    <p> When you don't have the information you need to make your analyses, we can help you determine what data you need and how to best obtain it. 
+                        For your convenience, our in-house surveying team is able to collect accurate datasets for you.</p>
+                </div>
+                <div class="w3-col m6">
+                    <img class="w3-image w3-round-large" src="images/services-survey.png" alt="Web survey to collect data" width="700" height="394">
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-
-<!-- Surveying services section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-    <div class="w3-row-padding">
-        <div class="w3-col m6">
-            <h3 class="w3-large">Surveying and Data Collection:</h3>
-            <p> When you don't have the information you need to make your analyses, we can help you determine what data you need and how to best obtain it. 
-                For your convenience, our in-house surveying team is able to collect accurate datasets for you. </p>
+        
+        <!-- Other services section -->
+        <div class="w3-center">
+            <div class="w3-container padding">
+                <ul class="list-centre services-list">
+                    <h3 class="w3-large">Other Services:</h3></li>
+                    <li>Data conversion and compilation</li>
+                    <li>Database design and management</li>
+                    <li>Project management and design</li>
+                </ul>
+            </div>
         </div>
-        <div class="w3-col m6">
-            <img class="w3-image w3-round-large" src="!!!!!!!!!!!!!!!!!!!!services-surveying!!!!!!!!!!!!" alt="Man using surveying equipment" width="700" height="394">
+        
+        <!-- end text -->
+        <div class="w3-container">
+            <p class="w3-large w3-center">And more! See our <a href="projects.html">gallery</a> for examples of past projects.</p>
         </div>
-    </div>
-</div>
+      </main>
+<!--*** End Owner: Rebecca Wilkins *** -->
+    
+      <!-- Edited by Aida Tuhcic December 7th will update/explain with more detailed comments and sources! -->
+      <!-- Footer by Terrie-Ann. Inspired by w3schools startup template-->
+      <!--Social media icons updated by Terrie-Ann 16/11/2021-->
+      <!--Footer layout and contents updated by Terrie-Ann 17/11/2021-->
+      <div class=footer-container>
+        <footer>
+          <p></p> <!--icon links fixed by Terrie-Ann 16/11/2021-->
+          <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
+          <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter"></a>
+          <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="Linkedin"></a>
+          <p>Copyright &copy; Géoinformatique 2021.</p>
+          <p><a href= #top>back to top</a></p>
+        <footer>
+      </div> <!-- end div for footer -->
+      
+      <!-- Calling Javascript file by Aida -->
+      <script src="JS/javascript.js"></script>
 
-<!-- Other services section -->
-<div class="w3-container w3-center"" style="padding:128px 16px">
-    <div class="w3-row-padding">
-        <div class="w3-col m6">
-            <h3 class="w3-large w3-center">Other services:</h3>
-            <ul class=list-centre>
-                <li>Data conversion and compilation</li>
-                <li>Database design and management</li>
-                <li>Project management and design</li>
-            </ul>
-            <p class="w3-large w3-center"">And more! See our <a href="projects.html">gallery</a> for examples of past projects.</p>
-        </div>
-    </div>
-</div>
-
-
-<!-- Footer by Terrie-Ann. Inspired by w3schools startup template-->
-<!--Social media icons updated by Terrie-Ann 16/11/2021-->
-<!--Footer layout and contents updated by Terrie-Ann 17/11/2021-->
-<footer id="footer">
-    <a href="#home">Back to top</a>
-    <p></p> <!--icon links fixed by Terrie-Ann 16/11/2021-->
-    <a href="https://www.facebook.com/"><img src="images/facebook.jpg" alt="Facebook"></a>
-    <a href="https://www.instagram.com/"><img src="images/instagram.jpg" alt="Instagram"></a>
-    <a href="https://twitter.com/"><img src="images/twitter.jpg" alt="Twitter"></a>
-    <a href="https://www.linkedin.com/"><img src="images/linkedin.jpg" alt="Linkedin"></a>
-    <p>Copyright &#169 Géoinformatique 2021.</p>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-
-</body>
-</html>
+    </body>
+  </html>

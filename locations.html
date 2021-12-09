@@ -1,234 +1,181 @@
 <!DOCTYPE html>
-<html>
-<title>Géoinformatique - Locations</title>
-<link rel="icon" type="image/png" href="images/favicon.png"/><!-- Fav Icon added by Aida on November 16th-->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<!-- icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="CSS/mystyles.css">
+  <html>
+  <title>Géoinformatique.</title><!-- Title changed by Aida on November 16th -->
+  <link rel="icon" type="image/png" href="images/favicon.png"/><!-- Fav Icon added by Aida on November 16th-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <!-- icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/mystyles.css">
 
-<style>
-    .hide-icon {visibility:hidden}
-    .hide-list-point {list-style: hidden}
-    .location-name {font-weight: bold;}
-</style>
+    <body>
+      <a name="top"></a>
+      <!-- Edited by Aida Tuhcic December 7th will update/explain with more detailed comments and sources!--> 
+      <!-- Nav bar links and icons by Rebecca Wilkins-->
+      <!-- dropdown menu code from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
+      <div class="logo" id="topofpage">
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a> 
+      </div>
 
-<body>
+      <!-- Edited by Aida Tuhcic December 7th will update/explain with more detailed comments and sources! -->
+      <div class="topnav" id="myTopnav">
+        <a href="resources.html"><i class="fa fa-book"></i> RESOURCES</a>
+        <a href="locations.html"><i class="fa fa-map-marker"></i> LOCATIONS</a>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <!-- ----------------------
-    - Owner: Aida Tuhcic 
-    - Date: November 15th 
-    - From : https://www.w3schools.com/css/css3_images.asp
-    - Changes: Added the logo png in the template. 
-    - Source of Image: I, the author Aida, created the logo. 
-    -------------------------- -->
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fa fa-briefcase"></i> OUR WORK <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="services.html"><i class="fa fa-th"></i> SERVICES</a>
+            <a href="projects.html"><i class="fa fa-image"></i> GALLERY</a> 
+          </div> <!-- end div for OUR WORK dropdown -->
+        </div> 
 
-<!-- home (logo link), about, services, projects gallery, locations, team, resources -->
-<div class="logo">
-    <a href="index.html"><img src="images/logo.png" alt="logo"></a> 
-</div>
-<!--** End Owner: Aida Tuhcic ***-->
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fa fa-building-o"></i> OUR COMPANY <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="about.html"><i class="fa fa-info-circle"></i> ABOUT US</a>
+            <a href="testimonials.html"><i class="fa fa-commenting-o"></i> TESTIMONIALS</a>
+            <a href="team.html"><i class="fa fa-user"></i> STAFF</a>
+          </div>
+        </div> <!-- end div for OUR COMPANY dropdown -->
 
-<!-- Nav bar links and icons by Rebecca Wilkins-->
-<!-- dropdown menu code from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
-<!-- Right-sided navbar links -->
-<div class="w3-right w3-hide-small navbar">
-    <div class="dropdown1">
-        <button class="dropbtn1"><i class="fa fa-building-o"></i> OUR COMPANY<i class="fa fa-caret-down"></i></button>
-        <div class="dropdown-content1">
-          <div><a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT US</a></div>
-          <div><a href="testimonials.html" class="w3-bar-item w3-button"><i class="fa fa-commenting-o fa-inverse"></i> TESTIMONIALS</a></div>
-          <div><a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> STAFF</a></div>
-        </div> <!-- end div.dropdown-content1-->
-    </div> <!-- end div.dropdown1-->
-    <div class="dropdown2">
-        <button class="dropbtn2"><i class="fa fa-briefcase"></i> OUR WORK<i class="fa fa-caret-down"></i></button>
-        <div class="dropdown-content2">
-        <div><a href="services.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a></div>
-        <div><a href="projects.html" class="w3-bar-item w3-button"><i class="fa fa-image"></i></i> GALLERY</a></div>
-        </div> <!-- end div.dropdown-content2-->
-    </div> <!-- end div.dropdown2-->
-    <a href="locations.html" class="w3-bar-item w3-button"><i class="fa fa-map-marker"></i>LOCATIONS</a>      
-    <a href="resources.html" class="w3-bar-item w3-button"><i class="fa fa-book"></i> RESOURCES</a>
-</div> <!-- end div.navbar-->
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div> <!-- end div for top nav bar -->
 
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
-  <!--projects button added by Terrie-Ann 17/11/2021-->
-  <a href="projects.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
-  <a href="locations.html" onclick="w3_close()" class="w3-bar-item w3-button">LOCATIONS</a>
-  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">STAFF</a>
-  <a href="testimonials.html" onclick="w3_close()" class="w3-bar-item w3-button">TESTIMONIALS</a>
-  <a href="resources.html" onclick="w3_close()" class="w3-bar-item w3-button">RESOURCES</a>
-</nav>
-
-<!-- Header with full-height hero image by Sunayana -->
-<!-- inspiration from w3schools https://www.w3schools.com/html/html_images.asp> -->
-<header id="home"><img src="images/heroimage.jpg" alt="Hero Image of a misty but very green temperate forest">
-    <!-- ----------------------
-        - Owner: Aida Tuhcic 
-        - Date: November 15th 
-        - Changes: Added the slogan and button arrow png in the template. 
-        - Source of Image: I, the author Aida, created the arrow image. 
-        -------------------------- -->
-      <div class="slogan">
+      <!-- Edited by Aida Tuhcic December 7th will update/explain with more detailed comments and sources! -->
+      <!-- Header with full-height hero image by Sunayana -->
+      <!-- inspiration from w3schools https://www.w3schools.com/html/html_images.asp> -->
+      <!-- ----------------------
+          - Owner: Aida Tuhcic 
+          - Date: November 15th 
+          - Changes: Added the slogan and button arrow png in the template. 
+          - Source of Image: I, the author Aida, created the arrow image. 
+          -------------------------- -->
+      <div class="hero-image">
+        <div class="slogan">
           <h1>LOCATIONS</h1>
           <p>"La géoinformatique est magnifique."<p>
         </div> 
-      <div class="button-arrow">
-        <a href="#about"><img src="images/arrowbutton.png" alt="arrow button"></a>
-      </div>
-    </div>
-    </header>
-<!--** End Owner: Aida Tuhcic ***-->
-  
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-    <h2 class="w3-center">WHERE TO FIND US</h2>
-    <p class="w3-center w3-large">Géoinformatique has offices in four major cities in Ontario and Québec.</p>
-    <p class="w3-center w3-large">Contact the nearest Géoinformatique location to enquire about our GIS services.</p>
-</div> <!-- end header text -->
+        <div class="button-arrow">
+          <a href="#about"><img src="images/arrowbutton.png" alt="arrow button"></a>
+        </div>
+      </div> <!-- end div for hero image -->
+      <!--** End Owner: Aida Tuhcic ***-->
+<!-- -----------------
+- Owner : Rebecca Wilkins
+- Date  : Dec 3-8
+- From  : https://www.w3schools.com/w3css/tryw3css_templates_startup.htm
+------------------- -->
+      
+      <main id="about">
+        <!-- intro Section -->
+        <div class="w3-container padding">
+            <h2 class="w3-center">WHERE TO FIND US</h2>
+            <p class="w3-center w3-large">Géoinformatique has offices in four major cities in Ontario and Québec.</p>
+            <p class="w3-center w3-large">Contact the nearest Géoinformatique location to enquire about our GIS services.</p>
+        </div> <!-- end div for intro text -->
 
-<div class="w3-container w3-center" id="locations-info">
+        <!-- Toronto contact info and map -->
+        <div class="w3-container padding">
+            <div class="w3-row-padding">
+                <div class="w3-col m6">
+                    <ul class="loc-list hide-list-point">
+                        <li class="w3-large location-name">Géoinformatique Toronto</li>
+                        <li><i class="fa fa-map-marker fa-fw"></i>Scotia Plaza, 40 King Street West</li>
+                        <li><i class="fa fa-map-marker fa-fw hide-icon"></i>Toronto, Ontario M5H 3C2</li>
+                        <li><i class="fa fa-phone fa-fw"></i>905-555-1745</li>
+                        <li><i class="fa fa-envelope fa-fw"></i>toronto@geoinformatique.ca</li>
+                    </ul>
+                </div>
+                <div class="w3-col m6">
+                    <img class="w3-image w3-round-large" src="https://maps.googleapis.com/maps/api/staticmap?center=Scotia+Plaza,+Toronto,+ON&zoom=14&size=600x400&markers=color:red%7C43.6489385,-79.3790555&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" alt="Map showing Toronto office location" width="700" height="394">
+                </div>
+            </div>
+        </div>
 
-    <p class="w3-large">Géoinformatique Toronto</p>
-    <p>Scotia Plaza, 40 King Street West </p>
-    <p>Toronto, Ontario M5H 3C2</p>
-    <p>905-555-1745</p>
-    <p>toronto&#64geoinformatique.ca</p> <!-----@ symbol character coded by Terrie-Ann 07/12/2021--->
+        <!-- Ottawa contact info and map -->
+        <div class="w3-container padding">
+            <div class="w3-row-padding">
+                <div class="w3-col m6">
+                    <ul class="loc-list hide-list-point">
+                        <li class="w3-large location-name">Géoinformatique Ottawa</li>
+                        <li><i class="fa fa-map-marker fa-fw"></i>180 Kent St</li>
+                        <li><i class="fa fa-map-marker fa-fw hide-icon"></i>Ottawa, ON K1P 0B6</li>
+                        <li><i class="fa fa-phone fa-fw"></i>613-555-1496</li>
+                        <li><i class="fa fa-envelope fa-fw"></i>ottawa@geoinformatique.ca</li>
+                    </ul>
+                </div>
+                <div class="w3-col m6">
+                    <img class="w3-image w3-round-large" src="https://maps.googleapis.com/maps/api/staticmap?center=180+Kent+St,+Ottawa,+ON&zoom=14&size=600x400&markers=color:red%7C45.4177789,-75.7039746&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" alt="Map showing Ottawa office location" width="700" height="394">
+                </div>
+            </div>
+        </div>
+            
+        <!-- Montreal contact info and map -->
+        <div class="w3-container padding">
+            <div class="w3-row-padding">
+                <div class="w3-col m6">
+                    <ul class="loc-list hide-list-point">
+                        <li class="w3-large location-name">G&#233;oinformatique Montr&#233;al</li>
+                        <li><i class="fa fa-map-marker fa-fw"></i>1325 Ren&#233;-L&#233;vesque Blvd W</li>
+                        <li><i class="fa fa-map-marker fa-fw hide-icon"></i>Ottawa, ON K1P 0B6</li>
+                        <li><i class="fa fa-phone fa-fw"></i>514-555-3369</li>
+                        <li><i class="fa fa-envelope fa-fw"></i>montreal@geoinformatique.ca</li>
+                    </ul>
+                </div>
+                <div class="w3-col m6">
+                    <img class="w3-image w3-round-large" src="https://maps.googleapis.com/maps/api/staticmap?center=1325+Ren%C3%A9-L%C3%A9vesque+Blvd+W,+Montreal,+QC&zoom=14&size=600x400&markers=color:red%7C45.4966023,-73.5750539&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" alt="Map showing Montreal office location" width="700" height="394">
+                </div>
+            </div>
+        </div>
 
-    <img src="https://maps.googleapis.com/maps/api/staticmap?center=Scotia+Plaza,+Toronto,+ON&zoom=14&size=600x400&markers=color:red%7C43.6489385,-79.3790555&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" class="w3-image" style="width:30%;margin-top:48px">
+        <!-- Quebec City contact info and map -->
+        <div class="w3-container padding">
+            <div class="w3-row-padding">
+                <div class="w3-col m6">
+                    <ul class="loc-list hide-list-point">
+                        <li class="w3-large location-name">G&#233;oinformatique Qu&#233;bec</li>
+                        <li><i class="fa fa-map-marker fa-fw"></i>800 Rue D'Youville</li>
+                        <li><i class="fa fa-map-marker fa-fw hide-icon"></i>Qu&#233;bec, QC G1R 5T3</li>
+                        <li><i class="fa fa-phone fa-fw"></i>418-555-2359</li>
+                        <li><i class="fa fa-envelope fa-fw"></i>quebec.city@geoinformatique.ca</li>
+                    </ul>
+                </div>
+                <div class="w3-col m6">
+                    <img class="w3-image w3-round-large" src="https://maps.googleapis.com/maps/api/staticmap?center=800+Rue+D%27Youville,+Qu%C3%A9bec,+QC&zoom=14&size=600x400&markers=color:red%7C46.8122812,-71.2145465&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" alt="Map showing Quebec City office location" width="700" height="394">
+                </div>
+            </div>
+        </div>
 
-    <p class="w3-large">Géoinformatique Ottawa</p>
-    <p>180 Kent St</p>
-    <p>Ottawa, ON K1P 0B6</p>
-    <p>613-555-1496</p>
-    <p>ottawa&#64geoinformatique.ca</p> <!-----@ symbol character coded by Terrie-Ann 07/12/2021--->
+        <!-- Learn more text -->
+        <div class="w3-container">
+            <p class="w3-center w3-large">All offices are committed to Géoinformatique vision and goals.</p>
+            <p class="w3-center w3-large">Learn more <a href="about.html">about us</a> and <a href="services.html">our work</a>.</p>
+        </div> <!-- end learn-more text -->
 
-    <img src="https://maps.googleapis.com/maps/api/staticmap?center=180+Kent+St,+Ottawa,+ON&zoom=14&size=600x400&markers=color:red%7C45.4177789,-75.7039746&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" class="w3-image" style="width:30%;margin-top:48px">
+      </main>
+<!--*** End Owner: Rebecca Wilkins *** -->
+        
+      <!-- Edited by Aida Tuhcic December 7th will update/explain with more detailed comments and sources! -->
+      <!-- Footer by Terrie-Ann. Inspired by w3schools startup template-->
+      <!--Social media icons updated by Terrie-Ann 16/11/2021-->
+      <!--Footer layout and contents updated by Terrie-Ann 17/11/2021-->
+      <div class=footer-container>
+        <footer>
+          <p></p> <!--icon links fixed by Terrie-Ann 16/11/2021-->
+          <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
+          <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter"></a>
+          <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="Linkedin"></a>
+          <p>Copyright &copy; Géoinformatique 2021.</p>
+          <p><a href= #top>back to top</a></p>
+        <footer>
+      </div> <!-- end div for footer -->
+      
+      <!-- Calling Javascript file by Aida -->
+      <script src="JS/javascript.js"></script>
 
-    <p class="w3-large">Géoinformatique Montreal</p>
-    1325 René-Lévesque Blvd W</p>
-    Montreal, QC H3G 0A1</p>
-    514-555-3369</p>
-    montreal&#64geoinformatique.ca</p> <!-----@ symbol character coded by Terrie-Ann 07/12/2021--->
-
-    <img src="https://maps.googleapis.com/maps/api/staticmap?center=1325+Ren%C3%A9-L%C3%A9vesque+Blvd+W,+Montreal,+QC&zoom=14&size=600x400&markers=color:red%7C45.4966023,-73.5750539&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" class="w3-image" style="width:30%;margin-top:48px">
-
-    <p class="w3-large">Géoinformatique Québec</p>
-    <p>800 Rue D'Youville</p>
-    <p>Québec, QC G1R 5T3</p>
-    <p>418-555-2359</p>
-    <p>quebec.city&#64geoinformatique.ca</p> <!-----@ symbol character coded by Terrie-Ann 07/12/2021--->
-
-    <img src="https://maps.googleapis.com/maps/api/staticmap?center=800+Rue+D%27Youville,+Qu%C3%A9bec,+QC&zoom=14&size=600x400&markers=color:red%7C46.8122812,-71.2145465&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" class="w3-image" style="width:30%;margin-top:48px">
-    <img src="https://maps.googleapis.com/maps/api/staticmap?center=Scotia+Plaza,+Toronto,+ON&zoom=14&size=600x400&markers=color:red%7C43.6489385,-79.3790555&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" class="w3-image" style="width:50%;margin-top:48px">
-    <ul class="hide-list-point">
-        <li class="w3-large location-name">Géoinformatique Toronto</li>
-        <li class="hide-list-point"><i class="fa fa-map-marker fa-fw"></i>Scotia Plaza, 40 King Street West</li>
-        <li class="hide-list-point"><i class="fa fa-map-marker fa-fw"></i>Toronto, Ontario M5H 3C2</li>
-        <li class="hide-list-point"><i class="fa fa-map-phone fa-fw"></i>905-555-1745</li>
-        <li class="hide-list-point"><i class="fa fa-map-envelope fa-fw"></i>toronto@geoinformatique.ca</li>
-    </ul>
-
-    
-    <img src="https://maps.googleapis.com/maps/api/staticmap?center=180+Kent+St,+Ottawa,+ON&zoom=14&size=600x400&markers=color:red%7C45.4177789,-75.7039746&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" class="w3-image" style="width:50%;margin-top:48px">
-    <ul>
-        <li class="w3-large location-name">Géoinformatique Ottawa</li>
-        <li><i class="fa fa-map-marker fa-fw"></i>180 Kent St</li>
-        <li><i class="fa fa-map-marker fa-fw hide-icon"></i>Ottawa, ON K1P 0B6</li>
-        <li><i class="fa fa-map-phone fa-fw"></i>613-555-1496</li>
-        <li><i class="fa fa-map-envelope fa-fw"></i>ottawa@geoinformatique.ca</li>
-    </ul>
-
-    <img src="https://maps.googleapis.com/maps/api/staticmap?center=1325+Ren%C3%A9-L%C3%A9vesque+Blvd+W,+Montreal,+QC&zoom=14&size=600x400&markers=color:red%7C45.4966023,-73.5750539&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" class="w3-image" style="width:50%;margin-top:48px">
-    <ul>
-        <li class="w3-large location-name">Géoinformatique Montreal</li>
-        <li><i class="fa fa-map-marker fa-fw"></i>1325 René-Lévesque Blvd W</li>
-        <li><i class="fa fa-map-marker fa-fw hide-icon"></i>Ottawa, ON K1P 0B6</li>
-        <li><i class="fa fa-map-phone fa-fw"></i>514-555-3369</li>
-        <li><i class="fa fa-map-envelope fa-fw"></i>montreal@geoinformatique.ca</li>
-    </ul>
-
-    <img src="https://maps.googleapis.com/maps/api/staticmap?center=800+Rue+D%27Youville,+Qu%C3%A9bec,+QC&zoom=14&size=600x400&markers=color:red%7C46.8122812,-71.2145465&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" class="w3-image" style="width:50%;margin-top:48px">
-    <ul>
-        <li class="w3-large location-name">Géoinformatique Québec</li>
-        <li><i class="fa fa-map-marker fa-fw"></i>800 Rue D'Youville</li>
-        <li><i class="fa fa-map-marker fa-fw hide-icon"></i>Québec, QC G1R 5T3</li>
-        <li><i class="fa fa-map-phone fa-fw"></i>418-555-2359</li>
-        <li><i class="fa fa-map-envelope fa-fw"></i>quebec.city@geoinformatique.ca</li>
-    </ul>
-</div><!-- end location-info -->
-
-<div class="w3-container" style="padding:128px 16px" id="learn-more">
-    <p class="w3-center w3-large">All offices are committed to Géoinformatique vision and goals.</p>
-    <p class="w3-center w3-large"><Learn more <a href="about.html">about us</a> and <a href="services.html">our work</a>.</p>
-</div> <!-- end learn-more text -->
-
-
-
-
-
-
-
-
-<!-- Footer by Terrie-Ann. Inspired by w3schools startup template-->
-<!--Social media icons updated by Terrie-Ann 16/11/2021-->
-<!--Footer layout and contents updated by Terrie-Ann 17/11/2021-->
-<footer id="footer" class="fa-3x">
-    <a href="#home">Back to top</a>
-    <p></p> <!--icon links fixed by Terrie-Ann 16/11/2021-->
-    <a href="https://www.facebook.com/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.instagram.com/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="https://twitter.com/"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
-    <p>Copyright &#169 Géoinformatique 2021.</p>
-</footer>
- 
-
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-
-</body>
-</html>
+    </body>
+  </html>
