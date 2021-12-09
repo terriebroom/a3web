@@ -1,3 +1,7 @@
+/* I NEED TO EXPLAIN A WHOLE LOT BUT WILL LATER 
+FOR NOW JUST ADD 
+Comment: Aida explains this function in the main css page. Please refer back to that, thank you. 
+*/
 @charset "UTF-8";
 /* Insert custom CSS to override the template CSS */
 * {
@@ -10,8 +14,7 @@ html, body {
     height: 100%; 
     width: 100%; 
     overflow-x: hidden;  
-    font-family: 'Raleway', sans-serif;
-    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;; 
 }
 
 /***********************
@@ -21,11 +24,7 @@ html, body {
 * Purpose: The following code down below, formats the logo in place - for it to align with the navigation bar. 
            As well, I also resized the image below. 
 ***********************/
-/***************** 
-* Owner : Aida Tuhcic
-* Date  : Nov 15 (v1)
-* From  : From Aida Tuhcic.
-******************/
+
 /* logo class */
 .logo {
     position: absolute; 
@@ -39,12 +38,7 @@ html, body {
 }
 /* End Owner: Aida Tuhcic */
 
-/***********************
-* Owner: Aida Tuhcic
-* Date: November 15th 
-* Comments: Added css elements to the logo. 
-* Purpose: The following code down below, formats the hero in place.
-***********************/
+
 /* Edited by Aida Tuhcic December 7th will update with more detailed comments. */
 /*Hero image style by Sunayana*/
 .hero-image { 
@@ -54,9 +48,8 @@ html, body {
     background-size: cover;
     background-position: no-repeat; 
     min-height: 10%;
-    z-index: 2;
 }
-/* End Owner: Aida Tuhcic */
+
 
 /***********************
 * Owner: Aida Tuhcic
@@ -70,45 +63,42 @@ html, body {
 * Purpose: The following code down below, formats the slogan in the center of the hero image. 
            - Also added media queries, for the text to render properly when a user changes devices or their browser viewport.  
 ***********************/
-/***************** 
-* Owner : Aida Tuhcic
-* Date  : Nov 15 (v1)
-* From  : Aida Tuhcic and w3schools.
-******************/
 
 /* slogan */
-.slogan, .h1, .p {
-  color: #ffffff;
-  text-shadow: 0 0 5px #000000;  
-  position: absolute; 
-  text-align: center; 
-  top: 50%; 
-  left: 50%;  
-  width: 100%; 
-  transform: translate(-50%, -50%); /* Source w3schools. */
-  z-index: 3;
+.slogan, 
+    .h1, .p {
+    color: #ffffff;
+    text-shadow: 0 0 5px #000000;  
+    position: absolute; 
+    text-align: center; 
+    top: 50%; 
+    left: 50%;  
+    width: 100%; 
+    transform: translate(-50%, -50%); /* Source w3schools. */
+
 }
 
 /* h1 element located in slogan class */
 .slogan h1 {
-  color: inherit; 
-  font-size: 6em;  
+    color: inherit; 
+    font-size: 6em;  
 }
 
 /* media query for slogan .h1 */
 @media all and (min-width: 414px) and (max-width: 767px) {
-  .slogan h1 {
-    padding-top: 25%; 
-    font-size: 3.2em; 
+    .slogan h1 {
+      padding-top: 25%; 
+      font-size: 3.2em; 
+    }
   }
-}
 
-@media all and (min-width: 414px) and (max-width: 900px) {
-  .slogan h1 {
-    padding-top: 20%; 
-    font-size: 3.2em; 
+  @media all and (min-width: 414px) and (max-width: 900px) {
+    .slogan h1 {
+      padding-top: 20%; 
+      font-size: 3.2em; 
+    }
   }
-}
+
 
 /* paragraph element located in slogan class */
 .slogan p {
@@ -118,13 +108,13 @@ html, body {
 
 /* media query for slogan paragraph element */
 @media all and (min-width: 414px) and (max-width: 767px) {
-  .slogan p {
-    padding-top: -25%; 
-    font-size: 1.2em; 
+    .slogan p {
+      padding-top: -25%; 
+      font-size: 1.2em; 
+    }
   }
-}
 
-/* media query for slogan paragraph element */
+  /* media query for slogan paragraph element */
 @media all and (min-width: 414px) and (max-width: 900px) {
   .slogan p {
     padding-top: -25%; 
@@ -147,11 +137,7 @@ html, body {
            - The button arrow png acts as a continue button for the user to continue down to next section of the webpage. 
            - Also added media queries, for the text to render properly when a user changes devices or their browser viewport.  
 ***********************/
-/***************** 
-* Owner : Aida Tuhcic
-* Date  : Nov 15 (v1)
-* From  : Aida Tuhcic and w3schools.
-******************/
+
 /* button arrow class */ 
 .button-arrow { 
     position: absolute; 
@@ -182,6 +168,7 @@ html, body {
   }
 }
 
+
 /* button arrow img */ 
 .button-arrow img {
     position: inherit; 
@@ -190,10 +177,10 @@ html, body {
 
 /* media query for button arrow img */ 
 @media all and (min-width: 414px) and (max-width: 767px) {
-  .button-arrow img {
-      position: inherit; 
-      height: 80px; 
-  }
+    .button-arrow img {
+        position: inherit; 
+        height: 80px; 
+    }
 }
 
 /* media query for button arrow img */ 
@@ -203,105 +190,19 @@ html, body {
       height: 70px; 
   }
 }
+
 /* End Owner: Aida Tuhcic */
 
-
-main {
-min-height: 100vh;
-}
-
-/***********************
-* Owner: Aida Tuhcic
-* Date: November 15th 
-* Comments: Added css elements to the slogan. 
-* Sources: Some elements are derived from https://www.w3schools.com/w3css/tryw3css_templates_startup.html, however not all.
-* Purpose: The following code down below, formats the about and services container and its elements.
-***********************/
-/***************** 
-* Owner : Aida Tuhcic
-* Date  : Nov 15 (v1)
-* From  : Aida Tuhcic and w3schools.
-******************/
-
-/* about container */ 
-.w3-container-about {
-    font-family: 'Raleway', sans-serif;
-    padding:128px 16px;
-    line-height: 30px; 
-    line-height: 45px; 
-    background: #9dc3c3;
-    color: #ffffff;  
-}
-
-/* about title */ 
-.title-about {
-      font-family: 'Raleway', sans-serif;
-      font-size: 2.5em;
-      font-weight: bold; 
-}
-
-/* about button */ 
-.button-about {
-      font-family: 'Raleway', sans-serif;
-      text-decoration: none;
-      padding: 10px;
-      color: #ffffff; 
-      background: #000000;
-}
-
-/* about img */ 
-.w3-col img {
-    width: 700px; 
-    height: 394px; 
-}
-
-/* services container */
-.w3-center-services {
-    font-family: 'Raleway', sans-serif;
-    text-align: center; 
-    font-size: 2.5em; 
-    font-weight: bold; 
-}
-
-/* services tag line */
-.w3-center-services-tag{
-    font-family: 'Raleway', sans-serif;
-    text-align: center; 
-    line-height: 90px; 
-    font-size: 1.3em; 
-    font-style: italic;
-}
-
-/* services container */
-.w3-container-services {
-    font-family: 'Raleway', sans-serif;
-    line-height: 30px; 
-    line-height: 45px; 
-    padding:128px 16px;
-    background: #a9caca;
-    color: #ffffff;  
-
-}
-
-/* services container */
-.w3-row {
-    text-align: 50%; 
-    margin-top:64px"
-}
-/* End Owner: Aida Tuhcic */
-/***************** 
-* Owner : Terrie- Ann edited by: Aida Tuhcic
-* Date  : Nov 17 (v1)
-* From  : 
-******************/
 /* Edited by Aida Tuhcic December 7th will update with more detailed comments. */
 /* Footer style added by Terrie-Ann 17/11/2021 */
 .footer-container {
     position: relative;
+    min-height: 100vh; 
     min-width: 100vh;
-    padding-top: 190px;
+    overflow: hidden;
     display: block; 
 }
+ 
 /* Edited by Aida Tuhcic December 7th will update with more detailed comments. */
 footer { /*footer by Terrie-Ann 15/11/2021*/
     position: absolute; 
@@ -331,43 +232,130 @@ footer img {
     transform: translate(-10%, 0%); /* Source w3schools. */
   }
 }
-/* End Owner: Terrie-Ann */
 
-/***************** 
-* Owner : Rebecca
-* Date  : Nov 17 (v1)
-* From  : https://www.w3schools.com/howto/howto_css_list_without_bullets.asp
-******************/
-/*custom CSS for services and locations pages by Rebecca*/
-.hide-icon {
-  visibility:hidden;
+
+/* KEEP NAV CSS AT THE END THANK YOU! */
+/* Edited by Aida on December 7th will update/explain with more detailed comments and sources! */
+.topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 4px; 
 }
 
-.hide-list-point {
-  list-style: none;
+.topnav a {
+    float: right; 
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
 }
 
-.location-name {font-weight: bold;
+.active {
+    background-color: #85B4B4;
+    color: #000000;
 }
 
-.services-list, .loc-list {display: inline-block;
+.topnav .icon {
+    display: none;
 }
 
-.padding {padding:25px 16px;
+.dropdown {
+    float: right;
+    display: block; 
+    overflow: hidden;
 }
 
-/* End Owner: Rebecca */
+.dropdown .dropbtn {
+    font-size: 15px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+  font-style: 'Raleway';
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 173px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-style: 'Raleway';
+  float: none;
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, 
+.dropdown:hover 
+.dropbtn {
+    font-style: 'Raleway';
+    background-color: #85B4B4;
+    color: white;
+}
+
+.dropdown-content 
+a:hover {
+  font-style: 'Raleway';
+  background-color: #c2d6d6;
+  color: #000000;
+}
+
+.dropdown:hover 
+.dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 905px) {
+.topnav a:not(:first-child), .dropdown .dropbtn {
+  display: none;
+}
+
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+}
+
+@media screen and (max-width: 905px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: center;
+}
+
+.topnav.responsive .dropdown {float: none;}
+.topnav.responsive .dropdown-content {position: relative;}
+.topnav.responsive .dropdown .dropbtn {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+}
 
 /*Team Page CSS. Owner: Terrie-Ann. December 6, 2021.*/
-/***************** 
-* Owner : Terrie- Ann 
-* Date  : Dec 6 (final)
-* From  : 
-******************/
 /*Container holds teams section*/
 .container {
   padding:128px 16px;
-  margin-top: 5px;
 }
 
 /*Make images and bio appear in column form*/
@@ -378,7 +366,19 @@ footer img {
   height: 100%;
   border:5px outset silver;
 }
+
+.w3-sidebar.w3-bar-block.w3-black.w3-card.w3-animate-left.w3-hide-medium.w3-hide-large {
+  display:none;
+}
+
+.w3-col.l3.m6.w3-margin-bottom {
+  height: 200px;
+}
+.w3-row-padding {
+  margin-top:64px;
+  margin-bottom:200px;
   
+}
 /*Each team member's column (card) has its own card for ease of editing and updating based on contents*/
 div.card1 {
   background-color: #85B4B4;
@@ -389,7 +389,7 @@ div.card2 {
   background-color: #85B4B4;
   height: 100px;
 }
-
+/*Provides equal spacing for each card*/
 div.cardgap1 {
   display: grid;
   grid-template-columns: auto;
@@ -408,12 +408,11 @@ div.cardgap3 {
 div.cardgap4 {
   display: grid;
   grid-template-columns: auto;
-  gap: 94px;
+  gap: 42px;
 }
 /*This gives the heading for each section of the teams and projects pages their own style*/
 .team {
   font-family: 'Raleway', sans-serif;
-  font-weight: bold;
 }
 /*This contains the gallery section contents*/
 .textalign {
@@ -423,7 +422,6 @@ div.cardgap4 {
   font-family: 'Raleway', sans-serif;
   margin-top:64px;
   margin-bottom:64px;
-  font-weight: bold;
 }
 /*To give the images their dimensions and positions, animations and appearance*/
 div.map {
@@ -476,189 +474,3 @@ div.desc {
   display: table;
 }
 /*End Owner - Terrie-Ann*/
-
-
-
-/***************** 
-* Owner : Sunayana Sashikumar
-* Date  : Dec 8 (final)
-* From  : https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_4val
-          https://www.javatpoint.com/how-to-change-the-font-in-css
-******************/
-div.resources {
-  text-align: left;
-  width: 75%;
-  display: block;
-} 
-
-div.who {
-  text-align: left;
-  font-weight: bold;
-  width: 75%;
-  display: block;
-  line-height: 2.0;
-  margin: 5%;
-  padding: 25px 50px 50px 150px;
-  background-color: #ffffff;
-  opacity: 0.5;
-} 
-
-div.cont {
-  text-align: center;
-  width: 100%;
-  display: block;
-} 
-
-div.tree {
-  font-weight: bold;
-} 
-
-/* End Owner: Sunayana Sashikumar */
-
-/* KEEP NAV CSS AT THE END THANK YOU! */
-
-
-/***********************
-* Owner: Aida Tuhcic
-* Date: November 15th 
-* Comments: Added css elements to the slogan. 
-* Sources: Some elements are derived from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp, however not all.
-* Purpose: The following code down below, formats the nav bar and resizes to fit the screen.
-***********************/
-/***************** 
-* Owner : Aida Tuhcic
-* Date  : Dec 7 (final)
-* From  : Aida Tuhcic and w3schools
-******************/
-/* top nav */
-.topnav {
-    background-color: #ffffff;
-    overflow: hidden;
-    padding: 4px; 
-}
-
-/* top nav a */
-.topnav a {
-    float: right; 
-    display: block;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-/* active */
-.active {
-    background-color: #85B4B4;
-    color: #000000;
-}
-
-/* dropdown icon */
-.topnav .icon {
-    display: none;
-}
-
-/* dropdown */
-.dropdown {
-    float: right;
-    display: block; 
-    overflow: hidden;
-}
-
-/* dropdown button */
-.dropdown .dropbtn {
-    font-size: 15px;  
-    border: none;
-    outline: none;
-    color: black;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-/* dropdown content */
-.dropdown-content {
-  font-style: 'Raleway';
-  display: none;
-  position: absolute;
-  background-color: #ffffff;
-  min-width: 173px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* dropdown content */
-.dropdown-content a {
-  font-style: 'Raleway';
-  float: none;
-  color: #000000;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* dropdown hover */
-.topnav a:hover, 
-.dropdown:hover 
-.dropbtn {
-    font-style: 'Raleway';
-    background-color: #85B4B4;
-    color: white;
-}
-
-/* dropdown content */
-.dropdown-content 
-a:hover {
-  font-style: 'Raleway';
-  background-color: #c2d6d6;
-  color: #000000;
-}
-
-/* dropdown */
-.dropdown:hover 
-.dropdown-content {
-  display: block;
-}
-
-/* top nav responsive media query */
-@media screen and (max-width: 905px) {
-.topnav a:not(:first-child), .dropdown .dropbtn {
-  display: none;
-}
-
-/* top nav icon */
-.topnav a.icon {
-  float: right;
-  display: block;
-}
-}
-
-/* top nav responsive media query */
-@media screen and (max-width: 905px) {
-.topnav.responsive {position: relative;}
-.topnav.responsive .icon {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/* top nav responsive */
-.topnav.responsive a {
-  float: none;
-  display: block;
-  text-align: center;
-}
-
-/* top nav responsive */
-.topnav.responsive .dropdown {float: none;}
-.topnav.responsive .dropdown-content {position: relative;}
-.topnav.responsive .dropdown .dropbtn {
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-}
-/* End Owner: Aida Tuhcic */
