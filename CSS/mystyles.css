@@ -1,10 +1,9 @@
-/* I NEED TO EXPLAIN A WHOLE LOT BUT WILL LATER 
-FOR NOW JUST ADD 
-Comment: Aida explains this function in the main css page. Please refer back to that, thank you. 
-*/
 @charset "UTF-8";
-/* Insert custom CSS to override the template CSS */
+/* Added by Aida Tuhcic on November 15th, * is an universal selector */
+/* Following text below is explained by Aida Tuhcic on December 9th. */
 * {
+  /* box sizing sets the total width and height of the page. */
+  /* border box includes content, border and padding of the width and height properties.  */
   box-sizing: border-box; 
 }
 
@@ -13,8 +12,9 @@ html, body {
     position: absolute;
     height: 100%; 
     width: 100%; 
-    overflow-x: hidden;  
-    font-family: 'Raleway', sans-serif;; 
+    overflow-x: hidden; /* specifics to clip content, add a scroll bar or display/hide overflow content (extra space). */
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth; /* Added by Rebecca on December 8th */
 }
 
 /***********************
@@ -22,7 +22,8 @@ html, body {
 * Date: November 15th 
 * Comments: Added css elements to the logo. 
 * Purpose: The following code down below, formats the logo in place - for it to align with the navigation bar. 
-           As well, I also resized the image below. 
+As well, I also resized the image below. 
+* From: I, the author, Aida. I played around until I found the proper elements.
 ***********************/
 
 /* logo class */
@@ -38,67 +39,68 @@ html, body {
 }
 /* End Owner: Aida Tuhcic */
 
-
-/* Edited by Aida Tuhcic December 7th will update with more detailed comments. */
+/***********************
+* Owner: Aida Tuhcic
+* Date: November 15th 
+* Comments: Added css elements to the logo. 
+* Purpose: The following code down below, formats the hero image in place.
+* Source: Some elements are from https://www.w3schools.com/howto/howto_css_hero_image.asp
+***********************/
 /*Hero image style by Sunayana*/
 .hero-image { 
     height: 100%; 
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/lake.jpg");
-    background-position: relative;
     background-size: cover;
-    background-position: no-repeat; 
     min-height: 10%;
+    z-index: 2; /* z-index refers to property of stacked element. */
 }
-
+/* End Owner: Aida Tuhcic */
 
 /***********************
 * Owner: Aida Tuhcic
 * Date: November 15th 
 * Comments: Added css elements to the slogan. 
 * Sources: Some elements are derived from https://www.w3schools.com/howto/howto_css_hero_image.asp, however not all.
-           Will put extra comments down below displaying which elements. 
-           - The translate element down below allows for an element to be repositioned in a vertical/horizontal direction.
-           - The reason I used it was to align the slogan in the center of the hero image.
-           - Used inspect tool on the browser to figure out the right dimensions for the media queries.  
+Will put extra comments down below displaying which elements. 
+- The translate element down below allows for an element to be repositioned in a vertical/horizontal direction.
+- The reason I used it was to align the slogan in the center of the hero image.
+- Used inspect tool on the browser to figure out the right dimensions for the media queries.  
 * Purpose: The following code down below, formats the slogan in the center of the hero image. 
-           - Also added media queries, for the text to render properly when a user changes devices or their browser viewport.  
+- Also added media queries, for the text to render properly when a user changes devices or their browser viewport.  
 ***********************/
-
 /* slogan */
-.slogan, 
-    .h1, .p {
-    color: #ffffff;
-    text-shadow: 0 0 5px #000000;  
-    position: absolute; 
-    text-align: center; 
-    top: 50%; 
-    left: 50%;  
-    width: 100%; 
-    transform: translate(-50%, -50%); /* Source w3schools. */
-
+.slogan, .h1, .p {
+  color: #ffffff;
+  text-shadow: 0 0 5px #000000;  
+  position: absolute; 
+  text-align: center; 
+  top: 50%; 
+  left: 50%;  
+  width: 100%; 
+  transform: translate(-50%, -50%); /* Source w3schools. */
+  z-index: 3; /* z-index refers to property of stacked element. */
 }
 
 /* h1 element located in slogan class */
 .slogan h1 {
-    color: inherit; 
-    font-size: 6em;  
+  color: inherit; 
+  font-size: 6em;  
 }
 
 /* media query for slogan .h1 */
 @media all and (min-width: 414px) and (max-width: 767px) {
-    .slogan h1 {
-      padding-top: 25%; 
-      font-size: 3.2em; 
-    }
+  .slogan h1 {
+    padding-top: 25%; 
+    font-size: 3.2em; 
   }
+}
 
-  @media all and (min-width: 414px) and (max-width: 900px) {
-    .slogan h1 {
-      padding-top: 20%; 
-      font-size: 3.2em; 
-    }
+@media all and (min-width: 414px) and (max-width: 900px) {
+  .slogan h1 {
+    padding-top: 20%; 
+    font-size: 3.2em; 
   }
-
+}
 
 /* paragraph element located in slogan class */
 .slogan p {
@@ -108,20 +110,17 @@ html, body {
 
 /* media query for slogan paragraph element */
 @media all and (min-width: 414px) and (max-width: 767px) {
-    .slogan p {
-      padding-top: -25%; 
-      font-size: 1.2em; 
-    }
-  }
-
-  /* media query for slogan paragraph element */
-@media all and (min-width: 414px) and (max-width: 900px) {
   .slogan p {
-    padding-top: -25%; 
     font-size: 1.2em; 
   }
 }
 
+/* media query for slogan paragraph element */
+@media all and (min-width: 414px) and (max-width: 900px) {
+  .slogan p {
+    font-size: 1.2em; 
+  }
+}
 /* End Owner: Aida Tuhcic */
 
 /***********************
@@ -129,13 +128,13 @@ html, body {
 * Date: November 15th 
 * Comments: Added css elements to the button arrow png located in the hero image. 
 * Sources: Some elements are derived from https://www.w3schools.com/howto/howto_css_hero_image.asp, however not all.
-           Will put extra comments down below displaying which elements. 
-           - The translate element down below allows for an element to be repositioned in a vertical/horizontal direction.
-           - The reason I used it was to align the button arrow png in the center of the hero image. 
-           - Used inspect tool on the browser to figure out the right dimensions for the media queries. 
+Will put extra comments down below displaying which elements. 
+- The translate element down below allows for an element to be repositioned in a vertical/horizontal direction.
+- The reason I used it was to align the button arrow png in the center of the hero image. 
+- Used inspect tool on the browser to figure out the right dimensions for the media queries. 
 * Purpose: The following code down below, formats the button arrow png in the center of the hero image. 
-           - The button arrow png acts as a continue button for the user to continue down to next section of the webpage. 
-           - Also added media queries, for the text to render properly when a user changes devices or their browser viewport.  
+- The button arrow png acts as a continue button for the user to continue down to next section of the webpage. 
+- Also added media queries, for the text to render properly when a user changes devices or their browser viewport.  
 ***********************/
 
 /* button arrow class */ 
@@ -168,7 +167,6 @@ html, body {
   }
 }
 
-
 /* button arrow img */ 
 .button-arrow img {
     position: inherit; 
@@ -177,10 +175,10 @@ html, body {
 
 /* media query for button arrow img */ 
 @media all and (min-width: 414px) and (max-width: 767px) {
-    .button-arrow img {
-        position: inherit; 
-        height: 80px; 
-    }
+  .button-arrow img {
+      position: inherit; 
+      height: 80px; 
+  }
 }
 
 /* media query for button arrow img */ 
@@ -190,20 +188,149 @@ html, body {
       height: 70px; 
   }
 }
-
 /* End Owner: Aida Tuhcic */
 
-/* Edited by Aida Tuhcic December 7th will update with more detailed comments. */
+
+main {
+min-height: 100vh;
+}
+
+/***********************
+* Owner: Aida Tuhcic
+* Date: November 15th 
+* Comments: Added css to the about and service section of the index page. 
+* Sources: https://www.w3schools.com/w3css/tryw3css_templates_startup.html
+* Purpose: The following code down below, formats the about and services container and its elements.
+***********************/
+
+/* about container */ 
+.w3-container-about {
+    font-family: 'Raleway', sans-serif;
+    padding:128px 16px;
+    line-height: 30px; 
+    line-height: 45px; 
+    background: #9dc3c3;
+    color: #ffffff;  
+}
+
+/* about title */ 
+.title-about {
+      font-family: 'Raleway', sans-serif;
+      font-size: 2.5em;
+      font-weight: bold; 
+}
+
+/* about button */ 
+.button-about {
+      font-family: 'Raleway', sans-serif;
+      text-decoration: none;
+      padding: 10px;
+      color: #ffffff; 
+      background: #000000;
+}
+
+/* about img */ 
+.w3-col img {
+    width: 700px; 
+    height: 394px; 
+}
+
+/* services container */
+.w3-center-services {
+    font-family: 'Raleway', sans-serif;
+    text-align: center; 
+    font-size: 2.5em; 
+    font-weight: bold; 
+}
+
+/* services tag line */
+.w3-center-services-tag{
+    font-family: 'Raleway', sans-serif;
+    text-align: center; 
+    line-height: 90px; 
+    font-size: 1.3em; 
+    font-style: italic;
+}
+
+/* services container */
+.w3-container-services {
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px; 
+    line-height: 45px; 
+    padding:128px 16px;
+    background: #a9caca;
+    color: #ffffff;  
+
+}
+
+/* services container */
+.w3-row {
+    margin-top: 64px; 
+}
+/* End Owner: Aida Tuhcic */
+
+/***********************
+* Owner: Aida Tuhcic
+* Date: November 15th 
+* Comments: Added css to the container of the testimonials.
+* Sources: https://www.w3schools.com/howto/howto_css_testimonials.asp
+* Purpose: The following code down below, formats the testimonial's body. 
+***********************/
+
+/* testimonials container */
+.container-review {
+  border: 0.5px solid #000000;
+  color: #ffffff; 
+  background-color: #85B4B4;
+  border-radius: 1px;
+  padding: 20px;
+  margin: 16px 0
+}
+
+/* testimonials last child element */
+.container-review::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* testimonials span */
+.container-review span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* media query for testimonials container */ 
+@media all and (min-width: 414px) and (max-width: 767px) {
+  .container-review {
+      text-align: center;
+  }
+}
+
+/* media query for testimonials container */ 
+@media all and (min-width: 414px) and (max-width: 900px) {
+  .container-review {
+      text-align: center;
+  }
+}
+/* End Owner: Aida Tuhcic */
+
+/***************** 
+* Owner : Terrie- Ann edited by: Aida Tuhcic
+* Date  : Nov 17 (v1)
+* From  : https://www.w3schools.com/w3css/tryw3css_templates_startup.htm
+******************/
 /* Footer style added by Terrie-Ann 17/11/2021 */
+
+/* footer container */
 .footer-container {
     position: relative;
-    min-height: 100vh; 
     min-width: 100vh;
-    overflow: hidden;
-    display: block; 
+    padding-top: 190px;
+    display: block; /* behaviour of the element */
 }
- 
-/* Edited by Aida Tuhcic December 7th will update with more detailed comments. */
+
+/* footer */
 footer { /*footer by Terrie-Ann 15/11/2021*/
     position: absolute; 
     margin: 0; 
@@ -215,15 +342,17 @@ footer { /*footer by Terrie-Ann 15/11/2021*/
 
     background-color: #85B4B4;/*Footer background colour updated by Terrie-Ann 17/11/2021*/
     color: #ffffff; 
-    font-style: 'Raleway';
+    font-family: 'Raleway';
     font-size: 1em;
     text-align: center; 
 }
 
+/* footer images (pngs) */
 footer img {
     height: 25px; 
 }
 
+/* footer responsive media query */
 @media all and (max-width: 580px) {
   .footer-container {
     position: relative;
@@ -232,127 +361,45 @@ footer img {
     transform: translate(-10%, 0%); /* Source w3schools. */
   }
 }
+/* End Owner: Terrie-Ann */
+/* End Owner: Aida Tuhcic */
 
+/***************** 
+* Owner : Rebecca
+* Date  : Nov 17 (v1)
+* From  : https://www.w3schools.com/howto/howto_css_list_without_bullets.asp
+******************/
+/*custom CSS for services and locations pages by Rebecca*/
 
-/* KEEP NAV CSS AT THE END THANK YOU! */
-/* Edited by Aida on December 7th will update/explain with more detailed comments and sources! */
-.topnav {
-    background-color: #ffffff;
-    overflow: hidden;
-    padding: 4px; 
+.hide-icon {
+  visibility:hidden;
 }
 
-.topnav a {
-    float: right; 
-    display: block;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 15px;
+.hide-list-point {
+  list-style: none;
 }
 
-.active {
-    background-color: #85B4B4;
-    color: #000000;
+.location-name {
+  font-weight: bold;
 }
 
-.topnav .icon {
-    display: none;
+.services-list, .loc-list {
+  display: inline-block;
 }
 
-.dropdown {
-    float: right;
-    display: block; 
-    overflow: hidden;
+.padding {
+  padding:25px 16px;
 }
 
-.dropdown .dropbtn {
-    font-size: 15px;  
-    border: none;
-    outline: none;
-    color: black;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
+.rw-row-padding{
+  padding:0 8px
+  }
 
-.dropdown-content {
-  font-style: 'Raleway';
-  display: none;
-  position: absolute;
-  background-color: #ffffff;
-  min-width: 173px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+/* End Owner: Rebecca */
 
-.dropdown-content a {
-  font-style: 'Raleway';
-  float: none;
-  color: #000000;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.topnav a:hover, 
-.dropdown:hover 
-.dropbtn {
-    font-style: 'Raleway';
-    background-color: #85B4B4;
-    color: white;
-}
-
-.dropdown-content 
-a:hover {
-  font-style: 'Raleway';
-  background-color: #c2d6d6;
-  color: #000000;
-}
-
-.dropdown:hover 
-.dropdown-content {
-  display: block;
-}
-
-@media screen and (max-width: 905px) {
-.topnav a:not(:first-child), .dropdown .dropbtn {
-  display: none;
-}
-
-.topnav a.icon {
-  float: right;
-  display: block;
-}
-}
-
-@media screen and (max-width: 905px) {
-.topnav.responsive {position: relative;}
-.topnav.responsive .icon {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.topnav.responsive a {
-  float: none;
-  display: block;
-  text-align: center;
-}
-
-.topnav.responsive .dropdown {float: none;}
-.topnav.responsive .dropdown-content {position: relative;}
-.topnav.responsive .dropdown .dropbtn {
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-}
-
-/*Team Page CSS. Owner: Terrie-Ann. December 6, 2021.*/
+/*Team Page CSS. Owner: Terrie-Ann. December 6, 2021.
+*Date: December 06, 2021
+*Inspiration from: https://www.w3schools.com/howto/howto_css_images_side_by_side.asp*/
 /*Container holds teams section*/
 .container {
   padding:128px 16px;
@@ -380,16 +427,24 @@ a:hover {
   
 }
 /*Each team member's column (card) has its own card for ease of editing and updating based on contents*/
+div.card {
+  float: left;
+  width: 25%;
+  height: 100%;
+  padding: 0 8px;
+  display: block;
+  margin-bottom: -200px;
+}
 div.card1 {
   background-color: #85B4B4;
   height: 500px;
 } 
 
 div.card2 {
-  background-color: #85B4B4;
-  height: 100px;
+  width: 100%;
+  height: 100%;
 }
-/*Provides equal spacing for each card*/
+/*Gaps provide equal spacing for each card*/
 div.cardgap1 {
   display: grid;
   grid-template-columns: auto;
@@ -408,7 +463,7 @@ div.cardgap3 {
 div.cardgap4 {
   display: grid;
   grid-template-columns: auto;
-  gap: 92px;
+  gap: 98px;
 }
 /*This gives the heading for each section of the teams and projects pages their own style*/
 .team {
@@ -423,14 +478,14 @@ div.cardgap4 {
   margin-top:64px;
   margin-bottom:64px;
 }
-/*To give the images their dimensions and positions, animations and appearance*/
+/*To give the images their dimensions and positions*/
 div.map {
   margin: 5px;
   float: left;
   width: 100%;
   padding: 5px;
 }
-
+/*To give the images animations and appearance*/
 div.map:hover {
   border: 5px solid #85B4B4;
 }
@@ -462,6 +517,7 @@ div.desc {
   width: 50%;
   padding: 0 8px;
   display: block;
+  
 }
 .row {
   padding: 0 16px;
@@ -474,3 +530,194 @@ div.desc {
   display: table;
 }
 /*End Owner - Terrie-Ann*/
+
+
+
+/***************** 
+* Owner : Sunayana Sashikumar
+* Date  : Dec 8 (final), Dec 9 (edits that didn't commit before)
+* From  : https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_4val
+          https://www.javatpoint.com/how-to-change-the-font-in-css
+          https://www.w3schools.com/css/css3_buttons.asp
+******************/
+/* Main css for the text alignment in the resources page, 8 Dec 2021 */
+div.resources {
+  text-align: left;
+  width: 75%;
+  display: block;
+  margin: 5%;
+  padding-left: 13%;
+  padding-top: 0.5%;
+} 
+
+/* Main css for the text alignment in the about page, 8 Dec 2021 */
+div.who {
+  text-align: left;
+  font-weight: bold;
+  width: 75%;
+  display: block;
+  line-height: 2.0; 
+  margin: 5%;
+  padding-left: 12%;
+  padding-top: 0.5%;
+  padding-right: 12%;
+  background: rgba(210,248,210, 0.1);
+  background-position:center;  
+} 
+/* Contact us button style change in the about page, 8 Dec 2021 */
+div.cont {
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+} 
+
+
+/* End Owner: Sunayana Sashikumar */
+
+
+/* KEEP NAV CSS AT THE END THANK YOU! */
+
+
+/***********************
+* Owner: Aida Tuhcic
+* Date: November 15th 
+* Comments: Added css elements to the nav bar. 
+* Sources: Some elements are derived from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp, however not all.
+* Purpose: The following code down below, formats the nav bar and resizes to fit the screen.
+***********************/
+
+/* top nav class */
+.topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 4px; 
+}
+
+/* top nav a link */
+.topnav a {
+    float: right; 
+    display: block; /* behaviour of the element */
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* active link */
+.active {
+    background-color: #85B4B4;
+    color: #000000;
+}
+
+/* dropdown icon */
+.topnav .icon {
+    display: none; /* behaviour of the element */
+}
+
+/* dropdown */
+.dropdown {
+    float: right;
+    display: block; /* behaviour of the element */
+    overflow: hidden;
+}
+
+/* dropdown button */
+.dropdown .dropbtn {
+    font-size: 15px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* dropdown content */
+.dropdown-content {
+  font-family: 'Raleway', sans-serif;
+  display: none; /* behaviour of the element */
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 173px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; /* z-index refers to property of stacked element. */
+}
+
+/* dropdown content */
+.dropdown-content a {
+  font-family: 'Raleway', sans-serif;
+  float: none;
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; /* behaviour of the element */
+  text-align: left;
+}
+
+/* dropdown hover */
+.topnav a:hover, 
+.dropdown:hover 
+.dropbtn {
+    font-family: 'Raleway', sans-serif;
+    background-color: #85B4B4;
+    color: white;
+}
+
+/* dropdown content */
+.dropdown-content 
+a:hover {
+  font-family: 'Raleway', sans-serif;
+  background-color: #c2d6d6;
+  color: #000000;
+}
+
+/* dropdown */
+.dropdown:hover 
+.dropdown-content {
+  display: block; /* behaviour of the element */
+}
+
+/* top nav responsive media query */
+@media screen and (max-width: 905px) {
+.topnav a:not(:first-child), .dropdown .dropbtn {
+  display: none; /* behaviour of the element */
+}
+
+/* top nav icon */
+.topnav a.icon {
+  float: right;
+  display: block; /* behaviour of the element */
+}
+}
+
+/* top nav responsive media query */
+@media screen and (max-width: 905px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* top nav responsive */
+.topnav.responsive a {
+  float: none;
+  display: block; /* behaviour of the element */
+  text-align: center;
+}
+
+/* top nav responsive */
+.topnav.responsive .dropdown {float: none;}
+.topnav.responsive .dropdown-content {position: relative;}
+.topnav.responsive .dropdown .dropbtn {
+  display: block; /* behaviour of the element */
+  width: 100%;
+  text-align: center;
+}
+}
+/* End Owner: Aida Tuhcic */

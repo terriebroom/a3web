@@ -1,119 +1,198 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>STAFF</title><!-- Title changed by Aida on November 16th -->
-    <link rel="icon" type="image/png" href="images/favicon.png"/><!-- Fav Icon added by Aida on November 16th-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <!-- icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/mystyles.css">
-  </head>
-  <body>
-    <a name="top"></a>
-    <!--  Aida  -->
+  <!-- beginning of html -->
+  <html lang="en">
+    <!-- beginning of head -->
+    <head>
+      <!-- title changed by Aida on November 16th -->
+      <title>Staff - G&#233;oinformatique.</title>
+      <!-- fav icon added by Aida on November 16th -->
+      <link rel="icon" type="image/png" href="images/favicon.png"/>
+      <!-- html unicode --> 
+      <meta charset="UTF-8">
+      <!-- viewport --> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- w3school style sheet link --> 
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <!-- google fonts - specifically to Raleway font --> 
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+      <!-- icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- style sheet link --> 
+      <link rel="stylesheet" href="CSS/mystyles.css">
+    </head>
+    <!-- end of head -->
+    
+    <!-- beginning of body -->   
+    <body>
+     <!-- ************************
+      - Owner: Aida Tuhcic 
+      - Original Date: December 7th
+      - Date Changed: December 9th 
+      - Changes done on December 7th: Added a new functional navigation header that has been assisted with JavaScript. The new nav bar
+        is mostly made from pure HTML, CSS and JavaScript. When the user resizes the webpage, the nav will resize to 
+        a user friendly interface. 
+      - Changes done on December 9th: Added multiple comments and edited links for the nav. 
+      - Purpose: The purpose of implementing this code is to demonstrate our knowledge of HTML, CSS and JavaScript that we learnt
+        in class. Also, to provide a user friendly experience.
+      - Sources: Some elements are derived from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
+      ************************ -->
+      <!-- Nav bar links and icons by Rebecca Wilkins -->
+      <!-- ************************
+      - Owner: Aida Tuhcic 
+      - Date: November 15th
+      - Changes done on November 15th: Added the logo png in the template. 
+      - Purpose: The purpose of the logo is to create a professional image for the webpage. The image is a nice tone of teal blue, 
+      as we wanted our company to be associated with a calm blue colour with an Earthy tone. 
+      - Sources: I, the author Aida, created the logo image. 
+      ************************ -->
+      <a id="top"></a> <!-- edited to work again by Sunayana 9 Dec, 2021 -->
+      <!-- class attribute, groups all elements in this class together. -->
+      <div class="logo"> 
+        <!-- a href, links user to the index.html page when the logo is clicked on. -->
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a> 
+      </div>
+      <!-- end of logo class -->
+      
+      <!-- class attribute, groups all elements in this class together. -->
+      <!-- id refers to the unique page and applies to that single element (myTopnav). -->
+      <div class="topnav" id="myTopnav"> 
+         
+      <!-- class attribute, groups all elements in this class together. -->  
+      <div class="dropdown"> 
+          <!-- drop down button for Our Company. -->
+          <!-- i class refers to icons used in the dropdown. -->
+          <button class="dropbtn"><i class="fa fa-building-o"></i> OUR COMPANY 
+          <i class="fa fa-caret-down"></i>
+      </button>
+      <!-- end of first button class -->
 
-    <!-- Edited by Aida Tuhcic December 7th --> 
-    <!-- Nav bar links and icons by Rebecca Wilkins-->
-    <!-- dropdown menu code from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
-    <div class="logo">
-      <a href="index.html"><img src="images/logo.png" alt="logo"></a> 
-    </div>
-
-    <!-- Edited by Aida Tuhcic December 7th  -->
-    <div class="topnav" id="myTopnav">
-
-      <div class="dropdown">
-        <button class="dropbtn"><i class="fa fa-briefcase"></i> OUR WORK <i class="fa fa-caret-down"></i></button>
-        <div class="dropdown-content">
-           <a href="services.html"><i class="fa fa-th"></i> SERVICES</a>
-           <a href="projects.html"><i class="fa fa-image"></i> GALLERY</a>
-        </div> <!-- end div for OUR WORK dropdown -->
-      </div> 
-
-      <div class="dropdown">
-        <button class="dropbtn"><i class="fa fa-building-o"></i> OUR COMPANY <i class="fa fa-caret-down"></i></button>
-        <div class="dropdown-content">
+      <!-- class attribute, groups all elements in this class together. -->  
+      <!-- a href, links user to the multiple pages of Our Company -->
+      <!-- drop down content for Our Company includes: About Us, Testimonials and Staff. -->
+      <!-- i class refers to icons used in the dropdown. -->  
+      <div class="dropdown-content">
           <a href="about.html"><i class="fa fa-info-circle"></i> ABOUT US</a>
           <a href="testimonials.html"><i class="fa fa-commenting-o"></i> TESTIMONIALS</a>
           <a href="team.html"><i class="fa fa-user"></i> STAFF</a>
-        </div>
-      </div> <!-- end div for OUR COMPANY dropdown -->
-      <a href="resources.html"><i class="fa fa-book"></i> RESOURCES</a>
-      <a href="locations.html"><i class="fa fa-map-marker"></i> LOCATIONS</a>
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div> <!-- end div for top nav bar -->
-
-    <!-- Edited by Aida Tuhcic December 7th  -->
-    <!-- Header with full-height image by Sunayana -->
-    <!-- inspiration from w3schools https://www.w3schools.com/html/html_images.asp> -->
-    <!-- ----------------------
-        - Owner: Aida Tuhcic 
-        - Date: November 15th 
-        - Changes: Added the slogan and button arrow png in the template. 
-        - Source of Image: I, the author Aida, created the arrow image. 
-        -------------------------- -->
-    <div class="hero-image">
-      <div class="slogan">
-        <h1>STAFF</h1>
-        <p>"La géoinformatique est magnifique."<p>
-      </div> 
-      <div class="button-arrow">
-        <a href="#team"><img src="images/arrowbutton.png" alt="arrow button"></a>
       </div>
-    </div> <!-- end div for hero image -->
-    <!--** End Owner: Aida Tuhcic ***-->
+      </div>
+      <!-- end of first dropdown content -->
+
+      <!-- class attribute, groups all elements in this class together. -->    
+      <div class="dropdown">
+          <!-- drop down button for Our Work -->
+          <!-- i class refers to icons used in the dropdown -->
+          <button class="dropbtn"><i class="fa fa-briefcase"></i> OUR WORK
+          <i class="fa fa-caret-down"></i>
+      </button>
+      <!-- end of second button class -->
+        
+      <!-- class attribute, groups all elements in this class together. -->  
+      <!-- a href, links user to the multiple pages of Our Work -->
+      <!-- drop down content for Our Company includes: Services and Gallery. -->
+      <!-- i class refers to icons used in the dropdown -->    
+      <div class="dropdown-content">
+          <a href="services.html"><i class="fa fa-th"></i> SERVICES</a>
+          <a href="projects.html"><i class="fa fa-image"></i> GALLERY</a> 
+      </div>
+      </div> 
+      <!-- end of second dropdown content -->   
+
+      <!-- a href, links user to the pages of Locations and Resources --> 
+      <!-- i class refers to icons used in the nav -->   
+      <a href="locations.html"><i class="fa fa-map-marker"></i> LOCATIONS</a>
+      <a href="resources.html"><i class="fa fa-book"></i> RESOURCES</a>
+        
+      <!-- void in JavaScript is an operator that evaluates the expression and return the undefined. -->  
+      <!-- onlcick executes Javascript when the button is clicked. -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <!-- end div for top nav bar -->
+      <!--** End Owner: Aida Tuhcic ***-->
+     
+      <!-- Header with full-height image by Sunayana -->
+      <!-- inspiration from w3schools https://www.w3schools.com/html/html_images.asp> -->
+      
+      <!-- ************************
+      - Owner: Aida Tuhcic 
+      - Original Date: November 15th
+      - Changes done on December 15th: Created a slogan and arrow button. 
+      - Changes done on December 7th: Added a new hero image and added multiple comments.
+      - Purpose: The purpose is for the user to be greeted by the image, when they first enter the site. Primarily used for 
+      aesthetic purposes, and we wanted to show our use of pure HTML and CSS. We chose this hero image as it was a beautiful 
+      mix of land, water and sky. As well, the purpose of the slogan is for the company to have a catchy, but professional catch phrase. 
+      - Sources: The hero image is from https://pixabay.com/photos/bc-beautiful-beauty-blue-british-3826680/ 
+      Photographer and Uploader of the image from PixaBay used: jameswheeler (Free for commercial use.) 
+      We also used https://www.w3schools.com/howto/howto_css_hero_image.asp as inspiration. 
+      The slogan and arrow button are created by me, Aida Tuhcic.
+      ************************ -->
+      <!-- class attribute, groups all elements in this class together. -->  
+      <div class="hero-image">
+      <div class="slogan">
+          <!-- h1 tag for the slogan -->
+          <h1>Staff</h1>
+          <!-- paragraph tag for the slogan -->
+          <p>"La g&#233;oinformatique est magnifique."<p>
+      </div> 
+      <!-- class attribute, groups all elements in this class together. -->    
+      <div class="button-arrow">
+          <!-- a href, when clicked on, the user will go be brought to the about section of the index page. -->
+          <a href="#about"><img src="images/arrowbutton.png" alt="arrow button"></a>
+      </div>
+      </div> 
+      <!-- end div for hero image -->
+      <!--** End Owner: Aida Tuhcic ***-->
 
       
   
-<!-----Team page Owner: Terrie-Ann. Updated December 06, 2021.
-Images generated based on characteristics of team members - from https://generated.photos/faces----->
-  <div class="container" id="team">
+<!--************************Team page Owner: Terrie-Ann. Updated December 06, 2021.
+Images generated based on characteristics of team members - from https://generated.photos/faces************************-->
+  <div class="container" id="about">
     <h3 class="team">MEET THE TEAM</h3>
     <h4 class="team">The framework of the company</h4>
     <p>
-      Géoinformatique is a team of 5 specialists, working in various locations across Ontario and Quebec, namely: Toronto, Ottawa, Montreal, Quebec City.
+      G&#233;oinformatique is a team of 5 specialists, working in various locations across Ontario and Quebec, namely: Toronto, Ottawa, Montreal, Quebec City.
       The other members of staff consist of individuals working under our specialists on different projects.
       Our team celebrates many years of experience in the GIS industry and related fields, with a host of loyal and new clientele.
       All members of staff share one common goal &#8211; to provide the very best GIS solutions to our clients.
-    </p> <!-----To separate cards for each team member to avoid overlapping or extra spacing----->
+    </p> <!--***To separate cards for each team member to avoid overlapping or extra spacing*****-->
     <div class="w3-row-padding">
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="card">
+      <div class="card">
+        <div class="card2">
           <img src="images/Aida.jpg" alt="Aida" class= "image">
           <div class="card1">
             <h3>Aida Tuhcic</h3>
             <p class="w3-opacity">IT Analyst, Quebec City</p>
             <p>Aida is an IT professional, who has been with the company from the inception. She created the initial start up software used today to conduct our spatial analyses. Her work focuses on monitoring the information technology that forms the core of the company. With her skills in GIS applications, Aida manages all the company's database, software, and hardware.</p>
-            <div class="cardgap1"> <!-----To make cards uniformed, though contents aren't----->
+            <div class="cardgap1"> <!--****To make cards uniformed, though contents aren't*****-->
               <div>
-<!-----End card for team member 1----->
+<!--****-End card for team member 1****-->
               </div>
-                <div><a href="locations.html"><img src="images/Contact.png" alt="Contact" class="image"></a></div> <!-----To link back to locations (contact) page----->
+                <div><a href="locations.html"><img src="images/Contact.png" alt="Contact" class="image"></a></div> <!--****To link back to locations (contact) page****-->
             </div>
+           
           </div>
         </div>
       </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="card">
+      <div class="card">
+        <div class="card2">
           <img src="images/Terrie.jpg" alt="Terrie" class= "image">
           <div class="card1">
             <h3>Terrie-Ann Broomfield</h3>
             <p class="w3-opacity">Land Surveying Specialist (OLS, GISP)</p>
             <p>Terrie-Ann is a Commissioned Land Surveyor and a Certified GIS professional, responsible for the Montreal division. She has over 5 years of experience in a variety of applied practices. Her range of expertise includes Land Surveying, GIS, Photogrammetry, Hydrography, and Environmental Sciences. Her skills include ArcGIS products, AutoCAD, Programming and Web Design.</p>
-            <div class="cardgap2">
+             <div class="cardgap2">
               <div>
-
+<!--****End card for team member 2****-->
               </div>
                 <div><a href="locations.html"><img src="images/Contact.png" alt="Contact" class="image"></a></div> 
             </div>
+            
           </div>
         </div>
       </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="card">
+      <div class="card">
+        <div class="card2">
           <img src="images/Rebecca.jpg" alt="Rebecca" class= "image">
           <div class="card1">
             <h3>Rebecca Wilkins</h3>
@@ -121,56 +200,82 @@ Images generated based on characteristics of team members - from https://generat
             <p>Rebecca is the point person on all things Remote Sensing.
               Her expertise include drone flight simulation, aerial photography, hardware and software maintenance.
               She is responsible for calibrating and testing new equipment in the field to prepare them for takeoff.</p>
-            <div class="cardgap3">
+              <div class="cardgap3">
               <div>
-
+<!--****End card for team member 3**** -->
               </div>
                 <div><a href="locations.html"><img src="images/Contact.png" alt="Contact" class="image"></a></div> 
             </div> 
+            
           </div>
         </div>
       </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="card">
+      <div class="card">
+        <div class="card2">
           <img src="images/Sunayana.jpg" alt="Sunayana" class= "image">
           <div class="card1">
             <h3>Sunayana Sashikumar</h3>
             <p class="w3-opacity">Geospatial Analyst</p>
             <p>Sunayana has over 5 years of experience in the geospatial industry, working closely with our clients
               and managing our risk assessment division. She contributes her insights and talents in various GIS products o the team, through her workshops and certificate training programs.</p>
-              <div class="cardgap4">
+                  <div class="cardgap4">
                 <div>
-  
+  <!--****End card for team member 4****-->
                 </div>
                   <div><a href="locations.html"><img src="images/Contact.png" alt="Contact" class="image"></a></div> 
-              </div>  
+              </div> 
           </div>
         </div>
       </div>
     </div>
   </div>
 <!-- Edited by Aida Tuhcic December 7th -->
-      <!-- Footer by Terrie-Ann. Inspired by w3schools startup template-->
-      <!--Social media icons updated by Terrie-Ann 16/11/2021-->
-      <!--Footer layout and contents updated by Terrie-Ann 17/11/2021-->
-      <div class="footer-container">
-        <footer>
-          <p></p> <!--icon links fixed by Terrie-Ann 16/11/2021-->
-          <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
-          <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
-          <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter"></a>
-          <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="Linkedin"></a>
-          <p>Copyright &#169; Géoinformatique 2021.</p>
-          <p><a href= #top>back to top</a></p>
-        <footer>
-      </div> <!-- end div for footer -->
+      <!-- Footer by Terrie-Ann. Inspired by w3schools startup template -->
+      <!-- Social media icons updated by Terrie-Ann 16/11/2021 -->
+      <!--Footer layout and contents updated by Terrie-Ann 17/11/2021 -->
       
-      <!-- Calling Javascript file by Aida -->
+      <!-- ************************
+      - Owner: Aida Tuhcic 
+      - Original Date: November 16th
+      - Changes done on December 7th: Added new png images to the footer.
+      - Changes done on December 9th: Added multiple new comments to the footer.
+      - Purpose: The purpose of implementing this code is to demonstrate our knowledge of HTML, CSS and JavaScript that we learnt
+      in class. As well, the footer is to display that the user has reached the end of the page. 
+      - Sources: The pngs are from https://www.iconsdb.com/ (Free for commercial use.) 
+      Inspiration is also from https://www.w3schools.com/w3css/tryw3css_templates_startup.htm
+      ************************ -->
+      <!-- class attribute, groups all elements in this class together. --> 
+      <div class="footer-container">
+        <!-- beginning of the footer. -->  
+        <footer>
+            <p> <!--icon links fixed by Terrie-Ann 16/11/2021-->
+            <!-- a href, when clicked on - user will be brought to facebook.com -->  
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+            <!-- a href, when clicked on - user will be brought to instagram.com -->   
+            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
+            <!-- a href, when clicked on - user will be brought to twitter.com -->  
+            <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter"></a>
+            <!-- a href, when clicked on - user will be brought to linkedin.com -->  
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="Linkedin"></a>
+            <!-- a href, links back to the top of the index web page, added by Sunayana -->
+            <!-- issues fixed using this link: https://stackoverflow.com/questions/32102747/how-to-make-a-back-to-top-button-using-css-and-html-only/32102822 -->
+            <p><a id="topbutton" href="#top">Back to Top</a></p>
+            <!--** End Owner: Sunayana Sashikumar **-->
+            <!-- copyright. -->  
+            <p>Copyright &#169; G&#233;oinformatique 2021.</p>
+        </footer>
+        <!-- end of the footer. -->    
+      </div> 
+      <!-- end div for the footer -->
+      <!--** End Owner: Aida Tuhcic ***-->
+      
+      <!-- Calling Javascript file added by Aida on December 7th, 2021. -->
       <script src="JS/javascript.js"></script>
-</body>
 
-</html>
-
+    </body>
+    <!-- end of body -->    
+  </html>
+  <!-- end of html --> 
 
 
   

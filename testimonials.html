@@ -1,98 +1,261 @@
 <!DOCTYPE html>
-  <html>
+  <!-- beginning of html -->
+  <html lang="en">
+    <!-- beginning of head -->
     <head>
-      <title>Géoinformatique.</title><!-- Title changed by Aida on November 16th -->
-      <link rel="icon" type="image/png" href="images/favicon.png"/><!-- Fav Icon added by Aida on November 16th-->
+      <!-- title changed by Aida on November 16th -->
+      <title>Testimonials - G&#233;oinformatique.</title>
+      <!-- fav icon added by Aida on November 16th -->
+      <link rel="icon" type="image/png" href="images/favicon.png"/>
+      <!-- html unicode --> 
       <meta charset="UTF-8">
+      <!-- viewport --> 
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- w3school style sheet link --> 
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <!-- google fonts - specifically to Raleway font --> 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
       <!-- icon library -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- style sheet link --> 
       <link rel="stylesheet" href="CSS/mystyles.css">
     </head>
+    <!-- end of head -->
+    
+    <!-- beginning of body -->   
     <body>
-      <a name="top"></a>
-      <!-- I NEED TO EXPLAIN A WHOLE LOT BUT WILL LATER FOR NOW JUST ADD 
-      Comment: Aida explains this function in the main html page. Please refer back to that, thank you. -->
-
-      <!-- Edited by Aida Tuhcic December 7th will update/explain with more detailed comments and sources!--> 
-      <!-- Nav bar links and icons by Rebecca Wilkins-->
-      <!-- dropdown menu code from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
-      <div class="logo">
+     <!-- ************************
+      - Owner: Aida Tuhcic 
+      - Original Date: December 7th
+      - Date Changed: December 9th 
+      - Changes done on December 7th: Added a new functional navigation header that has been assisted with JavaScript. The new nav bar
+        is mostly made from pure HTML, CSS and JavaScript. When the user resizes the webpage, the nav will resize to 
+        a user friendly interface. 
+      - Changes done on December 9th: Added multiple comments and edited links for the nav. 
+      - Purpose: The purpose of implementing this code is to demonstrate our knowledge of HTML, CSS and JavaScript that we learnt
+        in class. Also, to provide a user friendly experience.
+      - Sources: Some elements are derived from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
+      ************************ -->
+      <!-- Nav bar links and icons by Rebecca Wilkins -->
+      <!-- ************************
+      - Owner: Aida Tuhcic 
+      - Date: November 15th
+      - Changes done on November 15th: Added the logo png in the template. 
+      - Purpose: The purpose of the logo is to create a professional image for the webpage. The image is a nice tone of teal blue, 
+      as we wanted our company to be associated with a calm blue colour with an Earthy tone. 
+      - Sources: I, the author Aida, created the logo image. 
+      ************************ -->
+      <a id="top"></a> <!-- edited to work again by Sunayana 9 Dec, 2021 -->
+      <!-- class attribute, groups all elements in this class together. -->
+      <div class="logo"> 
+        <!-- a href, links user to the index.html page when the logo is clicked on. -->
         <a href="index.html"><img src="images/logo.png" alt="logo"></a> 
       </div>
+      <!-- end of logo class -->
+      
+      <!-- class attribute, groups all elements in this class together. -->
+      <!-- id refers to the unique page and applies to that single element (myTopnav). -->
+      <div class="topnav" id="myTopnav"> 
+         
+      <!-- class attribute, groups all elements in this class together. -->  
+      <div class="dropdown"> 
+          <!-- drop down button for Our Company. -->
+          <!-- i class refers to icons used in the dropdown. -->
+          <button class="dropbtn"><i class="fa fa-building-o"></i> OUR COMPANY 
+          <i class="fa fa-caret-down"></i>
+      </button>
+      <!-- end of first button class -->
 
-      <!-- Edited by Aida Tuhcic December 7th will update/explain with more detailed comments and sources! -->
-      <div class="topnav" id="myTopnav">
+      <!-- class attribute, groups all elements in this class together. -->  
+      <!-- a href, links user to the multiple pages of Our Company -->
+      <!-- drop down content for Our Company includes: About Us, Testimonials and Staff. -->
+      <!-- i class refers to icons used in the dropdown. -->  
+      <div class="dropdown-content">
+          <a href="about.html"><i class="fa fa-info-circle"></i> ABOUT US</a>
+          <a href="testimonials.html"><i class="fa fa-commenting-o"></i> TESTIMONIALS</a>
+          <a href="team.html"><i class="fa fa-user"></i> STAFF</a>
+      </div>
+      </div>
+      <!-- end of first dropdown content -->
 
-        <div class="dropdown">
-          <button class="dropbtn"><i class="fa fa-briefcase"></i> OUR WORK <i class="fa fa-caret-down"></i></button>
-          <div class="dropdown-content">
-             <a href="services.html"><i class="fa fa-th"></i> SERVICES</a>
-             <a href="projects.html"><i class="fa fa-image"></i> GALLERY</a>
-          </div> <!-- end div for OUR WORK dropdown -->
-        </div> 
+      <!-- class attribute, groups all elements in this class together. -->    
+      <div class="dropdown">
+          <!-- drop down button for Our Work -->
+          <!-- i class refers to icons used in the dropdown -->
+          <button class="dropbtn"><i class="fa fa-briefcase"></i> OUR WORK
+          <i class="fa fa-caret-down"></i>
+      </button>
+      <!-- end of second button class -->
+        
+      <!-- class attribute, groups all elements in this class together. -->  
+      <!-- a href, links user to the multiple pages of Our Work -->
+      <!-- drop down content for Our Company includes: Services and Gallery. -->
+      <!-- i class refers to icons used in the dropdown -->    
+      <div class="dropdown-content">
+          <a href="services.html"><i class="fa fa-th"></i> SERVICES</a>
+          <a href="projects.html"><i class="fa fa-image"></i> GALLERY</a> 
+      </div>
+      </div> 
+      <!-- end of second dropdown content -->   
 
-        <div class="dropdown">
-          <button class="dropbtn"><i class="fa fa-building-o"></i> OUR COMPANY <i class="fa fa-caret-down"></i></button>
-          <div class="dropdown-content">
-            <a href="about.html"><i class="fa fa-info-circle"></i> ABOUT US</a>
-            <a href="testimonials.html"><i class="fa fa-commenting-o"></i> TESTIMONIALS</a>
-            <a href="team.html"><i class="fa fa-user"></i> STAFF</a>
-          </div>
-        </div> <!-- end div for OUR COMPANY dropdown -->
-        <a href="resources.html"><i class="fa fa-book"></i> RESOURCES</a>
-        <a href="locations.html"><i class="fa fa-map-marker"></i> LOCATIONS</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-      </div> <!-- end div for top nav bar -->
-
-      <!-- Edited by Aida Tuhcic December 7th will update/explain with more detailed comments and sources! -->
+      <!-- a href, links user to the pages of Locations and Resources --> 
+      <!-- i class refers to icons used in the nav -->   
+      <a href="locations.html"><i class="fa fa-map-marker"></i> LOCATIONS</a>
+      <a href="resources.html"><i class="fa fa-book"></i> RESOURCES</a>
+        
+      <!-- void in JavaScript is an operator that evaluates the expression and return the undefined. -->  
+      <!-- onlcick executes Javascript when the button is clicked. -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <!-- end div for top nav bar -->
+      <!--** End Owner: Aida Tuhcic ***-->
+     
       <!-- Header with full-height image by Sunayana -->
       <!-- inspiration from w3schools https://www.w3schools.com/html/html_images.asp> -->
-      <!-- ----------------------
-          - Owner: Aida Tuhcic 
-          - Date: November 15th 
-          - Changes: Added the slogan and button arrow png in the template. 
-          - Source of Image: I, the author Aida, created the arrow image. 
-          -------------------------- -->
+      
+      <!-- ************************
+      - Owner: Aida Tuhcic 
+      - Original Date: November 15th
+      - Changes done on December 15th: Created a slogan and arrow button. 
+      - Changes done on December 7th: Added a new hero image and added multiple comments.
+      - Purpose: The purpose is for the user to be greeted by the image, when they first enter the site. Primarily used for 
+      aesthetic purposes, and we wanted to show our use of pure HTML and CSS. We chose this hero image as it was a beautiful 
+      mix of land, water and sky. As well, the purpose of the slogan is for the company to have a catchy, but professional catch phrase. 
+      - Sources: The hero image is from https://pixabay.com/photos/bc-beautiful-beauty-blue-british-3826680/ 
+      Photographer and Uploader of the image from PixaBay used: jameswheeler (Free for commercial use.) 
+      We also used https://www.w3schools.com/howto/howto_css_hero_image.asp as inspiration. 
+      The slogan and arrow button are created by me, Aida Tuhcic.
+      ************************ -->
+      <!-- class attribute, groups all elements in this class together. -->  
       <div class="hero-image">
-        <div class="slogan">
-          <h1>Testimonials.</h1>
-          <p>"La géoinformatique est magnifique."<p>
-        </div> 
-        <div class="button-arrow">
-          <a href="#stars"><img src="images/arrowbutton.png" alt="arrow button"></a>
-        </div>
-      </div> <!-- end div for hero image -->
+      <div class="slogan">
+          <!-- h1 tag for the slogan -->
+          <h1>Testimonials</h1>
+          <!-- paragraph tag for the slogan -->
+          <p>"La g&#233;oinformatique est magnifique."<p>
+      </div> 
+      <!-- class attribute, groups all elements in this class together. -->    
+      <div class="button-arrow">
+          <!-- a href, when clicked on, the user will go be brought to the about section of the index page. -->
+          <a href="#testimonials"><img src="images/arrowbutton.png" alt="arrow button"></a>
+      </div>
+      </div> 
+      <!-- end div for hero image -->
       <!--** End Owner: Aida Tuhcic ***-->
       
-       <span class="heading" id="stars">Our Client Reviews.</span>
-       <span class="fa fa-star checked"></span>    
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <p>5 average based on 200 reviews.</p>
+      <!-- *****************
+      - Testimonials Written By: Rebecca, Sunayana and Terrie-Anne. 
+      - Edited the html coding: Aida Tuhcic.
+      - Original Date: December 8th.
+      - Date Change: December 9th. 
+      - Purpose: The purpose of this section was to make a testimonial page for the company.
+      - Sources: Some elements are derived from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_testimonials
+      ************************* -->
+      <!-- class attribute, groups all elements in this class together. --> 
+      <!-- id refers to the unique page and applies to that single element (myTopnav). -->
+      <div class="testimonials" id="testimonials"></div>
+      <!-- class attribute, groups all elements in this class together. --> 
+      <div class="container-review">
+          <!-- span class refers to an inline container. inline elements are elements that occupy the territory of the tags defining the content. -->
+          <p><span>Michael Luhow &#8211; Canadian Geographers Web Inc.</span></p>
+          <!-- paragraph tag -->
+          <p>" The staff at G&#233;oinformatique were friendly and helped my company integrate several web-based maps into our existing website. 
+               They were able to start working on our project right away and finished before their estimated deadline. 
+               Everything works perfectly and our customers have already begun commenting on how much more user-friendly the website is. "</p>
+      </div>
 
-      <!-- Edited by Aida Tuhcic December 7th will update/explain with more detailed comments and sources! -->
-      <!-- Footer by Terrie-Ann. Inspired by w3schools startup template-->
-      <!--Social media icons updated by Terrie-Ann 16/11/2021-->
-      <!--Footer layout and contents updated by Terrie-Ann 17/11/2021-->
-      <div class="footer-container">
-        <footer>
-          <p></p> <!--icon links fixed by Terrie-Ann 16/11/2021-->
-          <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
-          <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
-          <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter"></a>
-          <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="Linkedin"></a>
-          <p>Copyright &#169; Géoinformatique 2021.</p>
-          <p><a href= #top>back to top</a></p>
-        <footer>
-      </div> <!-- end div for footer -->
+      <!-- class attribute, groups all elements in this class together. --> 
+      <div class="container-review">
+          <!-- span class refers to an inline container. inline elements are elements that occupy the territory of the tags defining the content. -->
+          <p><span>Shannon Atkinsonn &#8211; Sustainable Engineering Solutions.</span></p>
+          <!-- paragraph tag -->
+          <p>" I usually have issues with any GIS analysis because of the amount of time they take. 
+               It feels like too much effort all too often. This time though I was very surprised, the team did an amazing job and kept on schedule just as promised. 
+               Looking forward to working with them in the future. "</p>
+      </div>  
+
+      <!-- class attribute, groups all elements in this class together. --> 
+      <div class="container-review">
+          <!-- span class refers to an inline container. inline elements are elements that occupy the territory of the tags defining the content. -->
+          <p><span>Elle Petronzki &#8211; Litman and Associates Inc.</span></p>
+          <!-- paragraph tag -->
+          <p>" Excellent service at unbeatable prices. I was satisfied with my flood risk analysis, and I will be returning to get my flood mapping done. "</p>
+      </div>  
       
-      <!-- Calling Javascript file by Aida -->
+      <!-- class attribute, groups all elements in this class together. --> 
+      <div class="container-review">
+          <!-- span class refers to an inline container. inline elements are elements that occupy the territory of the tags defining the content. -->
+          <p><span>Fern Ship &#8211; University of Mistletoe.</span></p>
+          <!-- paragraph tag -->
+          <p>" I have been working with them since they began and have not worked with anyone else because of how good they are at their job. 
+               I am always impressed regardless of how many ever times I work with them. 
+               You can sense the passion of the G&#233;oinformatique team when you are around them. 
+               Makes me excited about my work as well. I hope the best for them on all their future endeavor. "</p>
+      </div>  
+
+      <!-- class attribute, groups all elements in this class together. --> 
+      <div class="container-review">
+          <!-- span class refers to an inline container. inline elements are elements that occupy the territory of the tags defining the content. -->
+          <p><span>Sarah Goodman &#8211; Goodman & Amen Associates Inc.</span></p>
+          <!-- paragraph tag -->
+          <p>" This is the third time I have contracted G&#233;oinformatique to help expand our database as our data needs change and grow. 
+               Each time, they were able to not only fix our current problem, but gave useful advice on future-proofing our design so we wouldn't need as many changes in the future. "</p>
+      </div>  
+
+      <!-- class attribute, groups all elements in this class together. --> 
+      <div class="container-review">
+          <!-- span class refers to an inline container. inline elements are elements that occupy the territory of the tags defining the content. -->
+          <p><span>Lucille Mather &#8211; Township of Kamil.</span></p>
+          <!-- paragraph tag -->
+          <p>" After hiring them to create several land-use maps for our city, we were so impressed with the quality of the work that we expanded the scope of the job to include making the maps into decorative prints, which now hang in our lobby. 
+               They were very flexible with last-minute requests, and even gave us a discount on the prints since they had already done much of the mapping. 
+               Thanks, G&#233;oinformatique! "</p>
+      </div> 
+      <!-- end div for testimonials -->
+
+       <!-- Footer by Terrie-Ann. Inspired by w3schools startup template -->
+      <!-- Social media icons updated by Terrie-Ann 16/11/2021 -->
+      <!--Footer layout and contents updated by Terrie-Ann 17/11/2021 -->
+      
+      <!-- ************************
+      - Owner: Aida Tuhcic 
+      - Original Date: November 16th
+      - Changes done on December 7th: Added new png images to the footer.
+      - Changes done on December 9th: Added multiple new comments to the footer.
+      - Purpose: The purpose of implementing this code is to demonstrate our knowledge of HTML, CSS and JavaScript that we learnt
+      in class. As well, the footer is to display that the user has reached the end of the page. 
+      - Sources: The pngs are from https://www.iconsdb.com/ (Free for commercial use.) 
+      Inspiration is also from https://www.w3schools.com/w3css/tryw3css_templates_startup.htm
+      ************************ -->
+      <!-- class attribute, groups all elements in this class together. --> 
+      <div class="footer-container">
+        <!-- beginning of the footer. -->  
+        <footer>
+            <p> <!--icon links fixed by Terrie-Ann 16/11/2021-->
+            <!-- a href, when clicked on - user will be brought to facebook.com -->  
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+            <!-- a href, when clicked on - user will be brought to instagram.com -->   
+            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
+            <!-- a href, when clicked on - user will be brought to twitter.com -->  
+            <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter"></a>
+            <!-- a href, when clicked on - user will be brought to linkedin.com -->  
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="Linkedin"></a>
+            <!-- a href, links back to the top of the index web page, added by Sunayana -->
+            <!-- issues fixed using this link: https://stackoverflow.com/questions/32102747/how-to-make-a-back-to-top-button-using-css-and-html-only/32102822 -->
+            <p><a id="topbutton" href="#top">Back to Top</a></p>
+            <!--** End Owner: Sunayana Sashikumar **-->
+            <!-- copyright. -->  
+            <p>Copyright &#169; G&#233;oinformatique 2021.</p>
+        </footer>
+        <!-- end of the footer. -->    
+      </div> 
+      <!-- end div for the footer -->
+      <!--** End Owner: Aida Tuhcic ***-->
+      
+      <!-- Calling Javascript file added by Aida on December 7th, 2021. -->
       <script src="JS/javascript.js"></script>
 
     </body>
+    <!-- end of body -->    
   </html>
+  <!-- end of html --> 
