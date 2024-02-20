@@ -1,31 +1,20 @@
 @charset "UTF-8";
-/* Added by Aida Tuhcic on November 15th, * is an universal selector */
-/* Following text below is explained by Aida Tuhcic on December 9th. */
+/* Alabaster Incense. 2024-02-19 */
 * {
   /* box sizing sets the total width and height of the page. */
   /* border box includes content, border and padding of the width and height properties.  */
   box-sizing: border-box; 
 }
 
-/* Body element added by Aida on November 15th */
+/* Body element */
 html, body {
     position: absolute;
     height: 100%; 
     width: 100%; 
     overflow-x: hidden; /* specifics to clip content, add a scroll bar or display/hide overflow content (extra space). */
-    font-family: 'Raleway', sans-serif;
-    scroll-behavior: smooth; /* Added by Rebecca on December 8th */
+    font-family: 'Helvetica', sans-serif;
+    scroll-behavior: smooth;
 }
-
-/***********************
-* Owner: Aida Tuhcic
-* Date: November 15th 
-* Comments: Added css elements to the logo. 
-* Purpose: The following code down below, formats the logo in place - for it to align with the navigation bar. 
-As well, I also resized the image below. 
-* From: I, the author, Aida. I played around until I found the proper elements.
-***********************/
-
 /* logo class */
 .logo {
     position: absolute; 
@@ -37,16 +26,6 @@ As well, I also resized the image below.
 .logo img {
     height: 150px;  
 }
-/* End Owner: Aida Tuhcic */
-
-/***********************
-* Owner: Aida Tuhcic
-* Date: November 15th 
-* Comments: Added css elements to the logo. 
-* Purpose: The following code down below, formats the hero image in place.
-* Source: Some elements are from https://www.w3schools.com/howto/howto_css_hero_image.asp
-***********************/
-/*Hero image style by Sunayana*/
 .hero-image { 
     height: 100%; 
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/lake.jpg");
@@ -54,20 +33,6 @@ As well, I also resized the image below.
     min-height: 10%;
     z-index: 2; /* z-index refers to property of stacked element. */
 }
-/* End Owner: Aida Tuhcic */
-
-/***********************
-* Owner: Aida Tuhcic
-* Date: November 15th 
-* Comments: Added css elements to the slogan. 
-* Sources: Some elements are derived from https://www.w3schools.com/howto/howto_css_hero_image.asp, however not all.
-Will put extra comments down below displaying which elements. 
-- The translate element down below allows for an element to be repositioned in a vertical/horizontal direction.
-- The reason I used it was to align the slogan in the center of the hero image.
-- Used inspect tool on the browser to figure out the right dimensions for the media queries.  
-* Purpose: The following code down below, formats the slogan in the center of the hero image. 
-- Also added media queries, for the text to render properly when a user changes devices or their browser viewport.  
-***********************/
 /* slogan */
 .slogan, .h1, .p {
   color: #ffffff;
@@ -121,22 +86,6 @@ Will put extra comments down below displaying which elements.
     font-size: 1.2em; 
   }
 }
-/* End Owner: Aida Tuhcic */
-
-/***********************
-* Owner: Aida Tuhcic
-* Date: November 15th 
-* Comments: Added css elements to the button arrow png located in the hero image. 
-* Sources: Some elements are derived from https://www.w3schools.com/howto/howto_css_hero_image.asp, however not all.
-Will put extra comments down below displaying which elements. 
-- The translate element down below allows for an element to be repositioned in a vertical/horizontal direction.
-- The reason I used it was to align the button arrow png in the center of the hero image. 
-- Used inspect tool on the browser to figure out the right dimensions for the media queries. 
-* Purpose: The following code down below, formats the button arrow png in the center of the hero image. 
-- The button arrow png acts as a continue button for the user to continue down to next section of the webpage. 
-- Also added media queries, for the text to render properly when a user changes devices or their browser viewport.  
-***********************/
-
 /* button arrow class */ 
 .button-arrow { 
     position: absolute; 
@@ -188,139 +137,11 @@ Will put extra comments down below displaying which elements.
       height: 70px; 
   }
 }
-/* End Owner: Aida Tuhcic */
-
-
 main {
 min-height: 100vh;
 }
 
-/***********************
-* Owner: Aida Tuhcic
-* Date: November 15th 
-* Comments: Added css to the about and service section of the index page. 
-* Sources: https://www.w3schools.com/w3css/tryw3css_templates_startup.html
-* Purpose: The following code down below, formats the about and services container and its elements.
-***********************/
-
-/* about container */ 
-.w3-container-about {
-    font-family: 'Raleway', sans-serif;
-    padding:128px 16px;
-    line-height: 30px; 
-    line-height: 45px; 
-    background: #9dc3c3;
-    color: #ffffff;  
-}
-
-/* about title */ 
-.title-about {
-      font-family: 'Raleway', sans-serif;
-      font-size: 2.5em;
-      font-weight: bold; 
-}
-
-/* about button */ 
-.button-about {
-      font-family: 'Raleway', sans-serif;
-      text-decoration: none;
-      padding: 10px;
-      color: #ffffff; 
-      background: #000000;
-}
-
-/* about img */ 
-.w3-col img {
-    width: 700px; 
-    height: 394px; 
-}
-
-/* services container */
-.w3-center-services {
-    font-family: 'Raleway', sans-serif;
-    text-align: center; 
-    font-size: 2.5em; 
-    font-weight: bold; 
-}
-
-/* services tag line */
-.w3-center-services-tag{
-    font-family: 'Raleway', sans-serif;
-    text-align: center; 
-    line-height: 90px; 
-    font-size: 1.3em; 
-    font-style: italic;
-}
-
-/* services container */
-.w3-container-services {
-    font-family: 'Raleway', sans-serif;
-    line-height: 30px; 
-    line-height: 45px; 
-    padding:128px 16px;
-    background: #a9caca;
-    color: #ffffff;  
-
-}
-
-/* services container */
-.w3-row {
-    margin-top: 64px; 
-}
-/* End Owner: Aida Tuhcic */
-
-/***********************
-* Owner: Aida Tuhcic
-* Date: November 15th 
-* Comments: Added css to the container of the testimonials.
-* Sources: https://www.w3schools.com/howto/howto_css_testimonials.asp
-* Purpose: The following code down below, formats the testimonial's body. 
-***********************/
-
-/* testimonials container */
-.container-review {
-  border: 0.5px solid #000000;
-  color: #ffffff; 
-  background-color: #85B4B4;
-  border-radius: 1px;
-  padding: 20px;
-  margin: 16px 0
-}
-
-/* testimonials last child element */
-.container-review::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* testimonials span */
-.container-review span {
-  font-size: 20px;
-  margin-right: 15px;
-}
-
-/* media query for testimonials container */ 
-@media all and (min-width: 414px) and (max-width: 767px) {
-  .container-review {
-      text-align: center;
-  }
-}
-
-/* media query for testimonials container */ 
-@media all and (min-width: 414px) and (max-width: 900px) {
-  .container-review {
-      text-align: center;
-  }
-}
-/* End Owner: Aida Tuhcic */
-
-/***************** 
-* Owner : Terrie- Ann edited by: Aida Tuhcic
-* Date  : Nov 17 (v1)
-* From  : https://www.w3schools.com/w3css/tryw3css_templates_startup.htm
-******************/
-/* Footer style added by Terrie-Ann 17/11/2021 */
+/* Footer style */
 
 /* footer container */
 .footer-container {
@@ -331,7 +152,7 @@ min-height: 100vh;
 }
 
 /* footer */
-footer { /*footer by Terrie-Ann 15/11/2021*/
+footer { /*footer*/
     position: absolute; 
     margin: 0; 
     bottom: 0; 
@@ -340,9 +161,9 @@ footer { /*footer by Terrie-Ann 15/11/2021*/
     padding: 17px;  
     width: 100%; 
 
-    background-color: #85B4B4;/*Footer background colour updated by Terrie-Ann 17/11/2021*/
+    background-color: #85B4B4;/*Footer background colour*/
     color: #ffffff; 
-    font-family: 'Raleway';
+    font-family: 'Helvetica';
     font-size: 1em;
     text-align: center; 
 }
@@ -361,16 +182,6 @@ footer img {
     transform: translate(-10%, 0%); /* Source w3schools. */
   }
 }
-/* End Owner: Terrie-Ann */
-/* End Owner: Aida Tuhcic */
-
-/***************** 
-* Owner : Rebecca
-* Date  : Nov 17 (v1)
-* From  : https://www.w3schools.com/howto/howto_css_list_without_bullets.asp
-******************/
-/*custom CSS for services and locations pages by Rebecca*/
-
 .hide-icon {
   visibility:hidden;
 }
@@ -394,12 +205,6 @@ footer img {
 .rw-row-padding{
   padding:0 8px
   }
-
-/* End Owner: Rebecca */
-
-/*Team Page CSS. Owner: Terrie-Ann. December 6, 2021.
-*Date: December 06, 2021
-*Inspiration from: https://www.w3schools.com/howto/howto_css_images_side_by_side.asp*/
 /*Container holds teams section*/
 .container {
   padding:128px 16px;
@@ -467,14 +272,14 @@ div.cardgap4 {
 }
 /*This gives the heading for each section of the teams and projects pages their own style*/
 .team {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 /*This contains the gallery section contents*/
 .textalign {
   text-align: center;
   border: 3px solid black;
   background-color: #85B4B4;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   margin-top:64px;
   margin-bottom:64px;
 }
@@ -529,26 +334,6 @@ div.desc {
   clear: both;
   display: table;
 }
-/*End Owner - Terrie-Ann*/
-
-
-
-/***************** 
-* Owner : Sunayana Sashikumar
-* Date  : Dec 8 (final), Dec 9 (edits that didn't commit before)
-* From  : https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_4val
-          https://www.javatpoint.com/how-to-change-the-font-in-css
-          https://www.w3schools.com/css/css3_buttons.asp
-******************/
-/* Main css for the text alignment in the resources page, 8 Dec 2021 */
-div.resources {
-  text-align: left;
-  width: 75%;
-  display: block;
-  margin: 5%;
-  padding-left: 13%;
-  padding-top: 0.5%;
-} 
 
 /* Main css for the text alignment in the about page, 8 Dec 2021 */
 div.who {
@@ -563,31 +348,7 @@ div.who {
   padding-right: 12%;
   background: rgba(210,248,210, 0.1);
   background-position:center;  
-} 
-/* Contact us button style change in the about page, 8 Dec 2021 */
-div.cont {
-  border: none;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  display: block;
-} 
-
-
-/* End Owner: Sunayana Sashikumar */
-
-
-/* KEEP NAV CSS AT THE END THANK YOU! */
-
-
-/***********************
-* Owner: Aida Tuhcic
-* Date: November 15th 
-* Comments: Added css elements to the nav bar. 
-* Sources: Some elements are derived from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp, however not all.
-* Purpose: The following code down below, formats the nav bar and resizes to fit the screen.
-***********************/
+}  
 
 /* top nav class */
 .topnav {
@@ -639,7 +400,7 @@ div.cont {
 
 /* dropdown content */
 .dropdown-content {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   display: none; /* behaviour of the element */
   position: absolute;
   background-color: #ffffff;
@@ -650,7 +411,7 @@ div.cont {
 
 /* dropdown content */
 .dropdown-content a {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   float: none;
   color: #000000;
   padding: 12px 16px;
@@ -663,7 +424,7 @@ div.cont {
 .topnav a:hover, 
 .dropdown:hover 
 .dropbtn {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     background-color: #85B4B4;
     color: white;
 }
@@ -671,7 +432,7 @@ div.cont {
 /* dropdown content */
 .dropdown-content 
 a:hover {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   background-color: #c2d6d6;
   color: #000000;
 }
@@ -720,4 +481,3 @@ a:hover {
   text-align: center;
 }
 }
-/* End Owner: Aida Tuhcic */
