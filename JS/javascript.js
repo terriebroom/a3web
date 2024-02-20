@@ -1,13 +1,4 @@
-///////////////////////
-// Owner: Aida Tuhcic
-// Original Date: December 8th
-// Date Changed: December 9th 
-// Changes done on December 9th: Added detailed comments on what the JavaScript code does. 
-// Purpose: The purpose of this JavaScript function is to call on the navigation bar from the html and makes sure it resizes. 
-// Source: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
-//////////////////////
-// function is used to described how this particular block of code will run. 
-// function myFunction is an expression. 
+
 function myFunction() {
     // var is the variable storing the data.
     // = (equals too). 
@@ -23,4 +14,3 @@ function myFunction() {
         x.classList.remove("responsive");
     }
   }
-// End Owner: Aida Tuhcic. 
