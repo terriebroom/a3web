@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-  <!-- beginning of html -->
+  <!-- index.html -->
+  <!-- Authors: Alabaster -->
+  <!-- Date Created: 2024-02-19 -->
+  <!-- Alabaster Blog called Incense. I was thinking about calling it "Substance" but that might come off as the wrong message -->
   <html lang="en">
-    <!-- beginning of head -->
+    <!-- header -->
     <head>
-      <!-- title changed by Aida on November 16th -->
-      <title>G&#233;oinformatique.</title>
-      <!-- fav icon added by Aida on November 16th -->
+      <title>Incense &#124; Alabaster</title>
       <link rel="icon" type="image/png" href="images/favicon.png"/>
       <!-- html unicode --> 
       <meta charset="UTF-8">
@@ -22,30 +23,9 @@
     </head>
     <!-- end of head -->
     
-    <!-- beginning of body -->   
+    <!-- body -->   
     <body>
-     <!-- ************************
-      - Owner: Aida Tuhcic 
-      - Original Date: December 7th
-      - Date Changed: December 9th 
-      - Changes done on December 7th: Added a new functional navigation header that has been assisted with JavaScript. The new nav bar
-        is mostly made from pure HTML, CSS and JavaScript. When the user resizes the webpage, the nav will resize to 
-        a user friendly interface. 
-      - Changes done on December 9th: Added multiple comments and edited links for the nav. 
-      - Purpose: The purpose of implementing this code is to demonstrate our knowledge of HTML, CSS and JavaScript that we learnt
-        in class. Also, to provide a user friendly experience.
-      - Sources: Some elements are derived from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
-      ************************ -->
-      <!-- Nav bar links and icons by Rebecca Wilkins -->
-      <!-- ************************
-      - Owner: Aida Tuhcic 
-      - Date: November 15th
-      - Changes done on November 15th: Added the logo png in the template. 
-      - Purpose: The purpose of the logo is to create a professional image for the webpage. The image is a nice tone of teal blue, 
-      as we wanted our company to be associated with a calm blue colour with an Earthy tone. 
-      - Sources: I, the author Aida, created the logo image. 
-      ************************ -->
-      <a id="top"></a> <!-- edited to work again by Sunayana 9 Dec, 2021 -->
+      <a id="top"></a>
       <!-- class attribute, groups all elements in this class together. -->
       <div class="logo"> 
         <!-- a href, links user to the index.html page when the logo is clicked on. -->
@@ -80,7 +60,7 @@
 
       <!-- class attribute, groups all elements in this class together. -->    
       <div class="dropdown">
-          <!-- drop down button for Our Work -->
+          <!-- drop down button -->
           <!-- i class refers to icons used in the dropdown -->
           <button class="dropbtn"><i class="fa fa-briefcase"></i> OUR WORK
           <i class="fa fa-caret-down"></i>
@@ -88,8 +68,8 @@
       <!-- end of second button class -->
         
       <!-- class attribute, groups all elements in this class together. -->  
-      <!-- a href, links user to the multiple pages of Our Work -->
-      <!-- drop down content for Our Company includes: Services and Gallery. -->
+      <!-- a href, links user to the multiple pages -->
+      <!-- drop down content -->
       <!-- i class refers to icons used in the dropdown -->    
       <div class="dropdown-content">
           <a href="services.html"><i class="fa fa-th"></i> SERVICES</a>
@@ -107,55 +87,24 @@
       <!-- onlcick executes Javascript when the button is clicked. -->
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
-      <!-- end div for top nav bar -->
-      <!--** End Owner: Aida Tuhcic ***-->
-     
-      <!-- Header with full-height image by Sunayana -->
-      <!-- inspiration from w3schools https://www.w3schools.com/html/html_images.asp> -->
-      
-      <!-- ************************
-      - Owner: Aida Tuhcic 
-      - Original Date: November 15th
-      - Changes done on December 15th: Created a slogan and arrow button. 
-      - Changes done on December 7th: Added a new hero image and added multiple comments.
-      - Purpose: The purpose is for the user to be greeted by the image, when they first enter the site. Primarily used for 
-      aesthetic purposes, and we wanted to show our use of pure HTML and CSS. We chose this hero image as it was a beautiful 
-      mix of land, water and sky. As well, the purpose of the slogan is for the company to have a catchy, but professional catch phrase. 
-      - Sources: The hero image is from https://pixabay.com/photos/bc-beautiful-beauty-blue-british-3826680/ 
-      Photographer and Uploader of the image from PixaBay used: jameswheeler (Free for commercial use.) 
-      We also used https://www.w3schools.com/howto/howto_css_hero_image.asp as inspiration. 
-      The slogan and arrow button are created by me, Aida Tuhcic.
-      ************************ -->
+      <!-- end div for top nav bar -->     
       <!-- class attribute, groups all elements in this class together. -->  
       <div class="hero-image">
       <div class="slogan">
           <!-- h1 tag for the slogan -->
-          <h1>G&#233;oinformatique</h1>
+          <h1>Incense</h1>
           <!-- paragraph tag for the slogan -->
-          <p>"La g&#233;oinformatique est magnifique."<p>
+          <p>"Faith is the substance of things unseen."<p>
       </div> 
       <!-- class attribute, groups all elements in this class together. -->    
       <div class="button-arrow">
-          <!-- a href, when clicked on, the user will go be brought to the about section of the index page. -->
           <a href="#about"><img src="images/arrowbutton.png" alt="arrow button"></a>
       </div>
       </div> 
       <!-- end div for hero image -->
-      <!--** End Owner: Aida Tuhcic ***-->
       
-      <!-- ************************
-      - Owner: Aida Tuhcic 
-      - Original Date: December 7th
-      - Date Changed: December 9th 
-      - Changes done on December 7th: Added an about section to the index page, so the user knows who the company is. 
-      - Changes done on December 9th: Added multiple comments.
-      - Purpose: The purpose of implementing this code is to illustrate who the company is. 
-      - Sources: Some elements are derived from https://www.w3schools.com/w3css/tryw3css_templates_startup.htm
-      The source of the image is from https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?cs=srgb&dl=pexels-fauxels-3183183.jpg&fm=jpg
-      Photographer and Uploader of the image from PixaBay used: fauxels (Free for commercial use.) 
-      ************************ --> 
       <!-- class attribute, groups all elements in this class together. -->
-      <!-- id refers to the unique page and applies to that single element (about). -->
+      <!-- id refers to the unique page and applies to that single element -->
       <div class="w3-container-about" id="about">
       <!-- class attribute, groups all elements in this class together. -->  
       <div class="w3-row">
@@ -178,18 +127,7 @@
       </div>
       </div>
       </div>
-      <!-- end div for the about section for the index -->  
-      <!--** End Owner: Aida Tuhcic ***-->
-
-      <!-- ************************
-      - Owner: Aida Tuhcic 
-      - Original Date: December 7th
-      - Date Changed: December 9th 
-      - Changes done on December 7th: Added a services section to the index page, so the user knows what the services of the company are. 
-      - Changes done on December 9th: Added multiple comments. 
-      - Purpose: The purpose of implementing this code is to illustrate what the company does. 
-      - Sources: Some elements are derived from https://www.w3schools.com/w3css/tryw3css_templates_startup.htm
-      ************************ -->  
+      <!-- end div for the about section for the index -->   
       <!-- class attribute, groups all elements in this class together. -->
       <!-- id refers to the unique page and applies to that single element (services). -->
       <div class="w3-container-services" id="services">
@@ -230,49 +168,23 @@
      </div>
      </div>
      </div>
-     <!-- end div for the services section for the index -->   
-     <!--** End Owner: Aida Tuhcic ***-->
-
-      <!-- Footer by Terrie-Ann. Inspired by w3schools startup template -->
-      <!-- Social media icons updated by Terrie-Ann 16/11/2021 -->
-      <!--Footer layout and contents updated by Terrie-Ann 17/11/2021 -->
-      
-      <!-- ************************
-      - Owner: Aida Tuhcic 
-      - Original Date: November 16th
-      - Changes done on December 7th: Added new png images to the footer.
-      - Changes done on December 9th: Added multiple new comments to the footer.
-      - Purpose: The purpose of implementing this code is to demonstrate our knowledge of HTML, CSS and JavaScript that we learnt
-      in class. As well, the footer is to display that the user has reached the end of the page. 
-      - Sources: The pngs are from https://www.iconsdb.com/ (Free for commercial use.) 
-      Inspiration is also from https://www.w3schools.com/w3css/tryw3css_templates_startup.htm
-      ************************ -->
+      <!-- end div for the services section for the index -->   
       <!-- class attribute, groups all elements in this class together. --> 
       <div class="footer-container">
-        <!-- beginning of the footer. -->  
+        <!-- footer. -->  
         <footer>
-            <p> <!--icon links fixed by Terrie-Ann 16/11/2021-->
-            <!-- a href, when clicked on - user will be brought to facebook.com -->  
-            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
-            <!-- a href, when clicked on - user will be brought to instagram.com -->   
-            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
-            <!-- a href, when clicked on - user will be brought to twitter.com -->  
-            <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter"></a>
+            <p>
             <!-- a href, when clicked on - user will be brought to linkedin.com -->  
             <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="Linkedin"></a>
-            <!-- a href, links back to the top of the index web page, added by Sunayana -->
-            <!-- issues fixed using this link: https://stackoverflow.com/questions/32102747/how-to-make-a-back-to-top-button-using-css-and-html-only/32102822 -->
             <p><a id="topbutton" href="#top">Back to Top</a></p>
-            <!--** End Owner: Sunayana Sashikumar **-->
             <!-- copyright. -->  
-            <p>Copyright &#169; G&#233;oinformatique 2021.</p>
+            <p>Copyright &#169; Alabaster 2024.</p>
         </footer>
         <!-- end of the footer. -->    
       </div> 
       <!-- end div for the footer -->
-      <!--** End Owner: Aida Tuhcic ***-->
       
-      <!-- Calling Javascript file added by Aida on December 7th, 2021. -->
+      <!-- Calling Javascript file added -->
       <script src="JS/javascript.js"></script>
 
     </body>
